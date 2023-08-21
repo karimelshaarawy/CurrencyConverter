@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FF58396E2A93842B004AF5AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF58396D2A93842B004AF5AA /* AppDelegate.swift */; };
-		FF5839722A93842C004AF5AA /* ConversionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5839712A93842C004AF5AA /* ConversionVC.swift */; };
+		FF5839722A93842C004AF5AA /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5839712A93842C004AF5AA /* ConversionViewController.swift */; };
 		FF5839752A93842C004AF5AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF5839732A93842C004AF5AA /* Main.storyboard */; };
 		FF5839772A93842E004AF5AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF5839762A93842E004AF5AA /* Assets.xcassets */; };
 		FF58397A2A93842E004AF5AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF5839782A93842E004AF5AA /* LaunchScreen.storyboard */; };
@@ -18,7 +18,7 @@
 /* Begin PBXFileReference section */
 		FF58396A2A93842B004AF5AA /* CurrencyConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrencyConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF58396D2A93842B004AF5AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FF5839712A93842C004AF5AA /* ConversionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionVC.swift; sourceTree = "<group>"; };
+		FF5839712A93842C004AF5AA /* ConversionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionViewController.swift; sourceTree = "<group>"; };
 		FF5839742A93842C004AF5AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF5839762A93842E004AF5AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF5839792A93842E004AF5AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 		FF5839832A938ECF004AF5AA /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				FF5839712A93842C004AF5AA /* ConversionVC.swift */,
+				FF5839712A93842C004AF5AA /* ConversionViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -162,7 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF5839722A93842C004AF5AA /* ConversionVC.swift in Sources */,
+				FF5839722A93842C004AF5AA /* ConversionViewController.swift in Sources */,
 				FF58396E2A93842B004AF5AA /* AppDelegate.swift in Sources */,
 				FF5839822A938EBB004AF5AA /* ConversionPresenter.swift in Sources */,
 			);
