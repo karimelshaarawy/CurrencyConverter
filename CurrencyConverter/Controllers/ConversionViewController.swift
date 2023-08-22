@@ -23,12 +23,12 @@ class ConversionViewController: UIViewController {
     lazy var selectedTo: String = currencies[0]
     override func viewDidLoad() {
         super.viewDidLoad()
-        fromPicker.delegate = self
-        fromPicker.dataSource = self
-        toPicker.dataSource = self
-        toPicker.delegate = self
+//        fromPicker.delegate = self
+//        fromPicker.dataSource = self
+//        toPicker.dataSource = self
+//        toPicker.delegate = self
         // Do any additional setup after loading the view.
-        amountTextField.keyboardType = .decimalPad
+//        amountTextField.keyboardType = .decimalPad
     }
 
     @IBAction func convertCurrencies(_ sender: Any) {
