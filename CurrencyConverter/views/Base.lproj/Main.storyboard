@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
@@ -93,10 +93,53 @@
             </objects>
             <point key="canvasLocation" x="89.855072463768124" y="-4.0760869565217392"/>
         </scene>
+        <!--Favourites View Controller-->
+        <scene sceneID="J6X-aL-qF7">
+            <objects>
+                <viewController storyboardIdentifier="FavouritesViewController" id="jKq-Xr-o26" customClass="FavouritesViewController" customModule="CurrencyConverter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nFX-wW-SQt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eac-fP-Cdu">
+                                <rect key="frame" x="343" y="50" width="51" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="EUt-fB-yta"/>
+                                    <constraint firstAttribute="width" constant="51" id="tJV-bR-Ava"/>
+                                </constraints>
+                                <color key="tintColor" red="0.086274509799999996" green="0.086274509799999996" blue="0.086274509799999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system"/>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="DlL-0s-0Rl">
+                                <rect key="frame" x="20" y="126" width="374" height="590"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cUq-pS-Moc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cUq-pS-Moc" firstAttribute="trailing" secondItem="DlL-0s-0Rl" secondAttribute="trailing" constant="20" id="0k1-w9-GNz"/>
+                            <constraint firstItem="DlL-0s-0Rl" firstAttribute="leading" secondItem="cUq-pS-Moc" secondAttribute="leading" constant="20" id="CKi-iY-Imp"/>
+                            <constraint firstItem="eac-fP-Cdu" firstAttribute="top" secondItem="cUq-pS-Moc" secondAttribute="top" constant="30" id="OmO-cD-YX8"/>
+                            <constraint firstItem="DlL-0s-0Rl" firstAttribute="top" secondItem="cUq-pS-Moc" secondAttribute="top" constant="106" id="hat-Rp-Sr7"/>
+                            <constraint firstItem="cUq-pS-Moc" firstAttribute="bottom" secondItem="DlL-0s-0Rl" secondAttribute="bottom" constant="20" id="q0b-bA-4ZL"/>
+                            <constraint firstItem="cUq-pS-Moc" firstAttribute="trailing" secondItem="eac-fP-Cdu" secondAttribute="trailing" constant="20" id="tdh-zH-ecB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="favouritesTableView" destination="DlL-0s-0Rl" id="zJq-Uf-Rl5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g0w-gl-tDg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="786" y="-234"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Image" width="414" height="405"/>
         <image name="Image 1" width="24" height="24"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
