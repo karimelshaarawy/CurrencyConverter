@@ -53,6 +53,14 @@ extension FavouritesViewController: UITableViewDelegate,UITableViewDataSource{
             cell.selectionStyle = .none
             cell.currencyLabel.text = countries[indexPath.row].currency
             cell.currencyImageView.sd_setImage(with: URL(string: countries[indexPath.row].countryFlag!))
+            cell.country = countries[indexPath.row]
+            if(containsCountry(country: countries[indexPath.row])){
+                cell.checkButton.isChecked = true
+            }else{
+                cell.checkButton.isChecked = false
+            }
+            
+            
             
             return cell
             
@@ -81,6 +89,21 @@ extension FavouritesViewController: FavouritesVC{
         favouritesTableView.reloadData()
     }
     
+    func containsCountry(country:CountryList)-> Bool{
+        if let savedData = UserDefaults.standard.object(forKey: "favourites") as? Data {
+            let decoder = JSONDecoder()
+            if var loadedItems = try? decoder.decode([CountryList].self, from: savedData) {
+                for i in loadedItems.indices{
+                    if loadedItems[i].id == country.id{
+                        return true
+                    }
+                }
+                
+            }
+            
+        }
+        
+        return false
+    }
     
 }
-

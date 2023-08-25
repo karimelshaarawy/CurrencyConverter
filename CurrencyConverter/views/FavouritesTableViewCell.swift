@@ -8,20 +8,53 @@
 import UIKit
 
 class FavouritesTableViewCell: UITableViewCell {
-
-    @IBOutlet weak var checkButton: UIButton!
+    
+    @IBOutlet weak var checkButton: CheckBox!
     @IBOutlet weak var currencyLabel: UILabel!
     @IBOutlet weak var currencyImageView: UIImageView!
+    
+    var country : CountryList?
     override func awakeFromNib() {
         super.awakeFromNib()
         checkButton.setTitle("", for: .normal)
         // Initialization code
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
     
+    @IBAction func toggleFavourites(_ sender: CheckBox) {
+        if let savedData = UserDefaults.standard.object(forKey: "favourites") as? Data {
+            let decoder = JSONDecoder()
+            if var loadedItems = try? decoder.decode([CountryList].self, from: savedData) {
+                if let country = country{
+                    if(checkButton.isChecked){
+                        loadedItems = loadedItems.filter{$0.id != country.id}
+                    }
+                    else{
+                        loadedItems.append(country)
+
+                    }
+                    let encoder = JSONEncoder()
+                    if let encoded = try? encoder.encode(loadedItems) {
+                        UserDefaults.standard.set(encoded, forKey: "favourites")
+                    }
+                }
+            }
+        }else {
+            if let country = country{
+                var loadedItems:[CountryList] = []
+                loadedItems.append(country)
+                let encoder = JSONEncoder()
+                if let encoded = try? encoder.encode(loadedItems) {
+                    UserDefaults.standard.set(encoded, forKey: "favourites")
+                    
+                }
+                
+            }
+        }
+    }
 }

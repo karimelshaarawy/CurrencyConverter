@@ -14,6 +14,7 @@
 		FF2EF3FD2A991937007057F9 /* favouritesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2EF3FC2A991936007057F9 /* favouritesPresenter.swift */; };
 		FF2EF4002A991E62007057F9 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = FF2EF3FF2A991E62007057F9 /* SDWebImage */; };
 		FF2EF4022A991E62007057F9 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FF2EF4012A991E62007057F9 /* SDWebImageMapKit */; };
+		FF2EF4042A992F0B007057F9 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2EF4032A992F0B007057F9 /* CheckBox.swift */; };
 		FF58396E2A93842B004AF5AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF58396D2A93842B004AF5AA /* AppDelegate.swift */; };
 		FF5839722A93842C004AF5AA /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5839712A93842C004AF5AA /* ConversionViewController.swift */; };
 		FF5839752A93842C004AF5AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF5839732A93842C004AF5AA /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 		FF2EF3F72A98C7F0007057F9 /* FavouritesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouritesTableViewCell.xib; sourceTree = "<group>"; };
 		FF2EF3FA2A99177E007057F9 /* CountriesCurrencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesCurrencies.swift; sourceTree = "<group>"; };
 		FF2EF3FC2A991936007057F9 /* favouritesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favouritesPresenter.swift; sourceTree = "<group>"; };
+		FF2EF4032A992F0B007057F9 /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		FF58396A2A93842B004AF5AA /* CurrencyConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrencyConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF58396D2A93842B004AF5AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF5839712A93842C004AF5AA /* ConversionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				FF5839732A93842C004AF5AA /* Main.storyboard */,
 				FF2EF3F62A98C7F0007057F9 /* FavouritesTableViewCell.swift */,
 				FF2EF3F72A98C7F0007057F9 /* FavouritesTableViewCell.xib */,
+				FF2EF4032A992F0B007057F9 /* CheckBox.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				FF2EF3F52A98C740007057F9 /* FavouritesViewController.swift in Sources */,
 				FF5839722A93842C004AF5AA /* ConversionViewController.swift in Sources */,
 				FF2EF3FB2A99177E007057F9 /* CountriesCurrencies.swift in Sources */,
+				FF2EF4042A992F0B007057F9 /* CheckBox.swift in Sources */,
 				FF58396E2A93842B004AF5AA /* AppDelegate.swift in Sources */,
 				FFE9751F2A96141B004BC9F6 /* APIManager.swift in Sources */,
 				FFE9751C2A96139E004BC9F6 /* Currencies.swift in Sources */,
