@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF2EF3F52A98C740007057F9 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2EF3F42A98C740007057F9 /* FavouritesViewController.swift */; };
 		FF58396E2A93842B004AF5AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF58396D2A93842B004AF5AA /* AppDelegate.swift */; };
 		FF5839722A93842C004AF5AA /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5839712A93842C004AF5AA /* ConversionViewController.swift */; };
 		FF5839752A93842C004AF5AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF5839732A93842C004AF5AA /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FF2EF3F42A98C740007057F9 /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
 		FF58396A2A93842B004AF5AA /* CurrencyConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrencyConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF58396D2A93842B004AF5AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF5839712A93842C004AF5AA /* ConversionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				FF5839712A93842C004AF5AA /* ConversionViewController.swift */,
+				FF2EF3F42A98C740007057F9 /* FavouritesViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF2EF3F52A98C740007057F9 /* FavouritesViewController.swift in Sources */,
 				FF5839722A93842C004AF5AA /* ConversionViewController.swift in Sources */,
 				FF58396E2A93842B004AF5AA /* AppDelegate.swift in Sources */,
 				FFE9751F2A96141B004BC9F6 /* APIManager.swift in Sources */,
