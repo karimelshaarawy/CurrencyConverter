@@ -6,12 +6,16 @@
 //
 
 import UIKit
+import SDWebImage
 
 class FavouritesViewController: UIViewController {
 
     @IBOutlet weak var dismissButton: UIButton!
     @IBOutlet weak var wrapperView: UIView!
     @IBOutlet weak var favouritesTableView: UITableView!
+    
+    lazy var presenter = favouritesPresenter(view: self)
+    var countries: [CountryList] = []
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,6 +27,7 @@ class FavouritesViewController: UIViewController {
         
         favouritesTableView.delegate = self
         favouritesTableView.dataSource = self
+        presenter.getCountries()
     }
     
 
@@ -40,13 +45,19 @@ class FavouritesViewController: UIViewController {
 
 extension FavouritesViewController: UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return countries.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "FavouritesTableViewCell") as? FavouritesTableViewCell{
             cell.selectionStyle = .none
-            return cell}
+            cell.currencyLabel.text = countries[indexPath.row].currency
+            cell.currencyImageView.sd_setImage(with: URL(string: countries[indexPath.row].countryFlag!))
+            
+            return cell
+            
+            
+        }
         
         return UITableViewCell()
     }
@@ -58,5 +69,18 @@ extension FavouritesViewController: UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 95
     }
+}
+extension FavouritesViewController: FavouritesVC{
+    func setCountries(countriesList: [CountryList]?) {
+        if let list = countriesList {
+            countries = list
+        }
+    }
+    
+    func reloadTableView() {
+        favouritesTableView.reloadData()
+    }
+    
+    
 }
 

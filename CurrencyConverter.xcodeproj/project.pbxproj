@@ -10,6 +10,10 @@
 		FF2EF3F52A98C740007057F9 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2EF3F42A98C740007057F9 /* FavouritesViewController.swift */; };
 		FF2EF3F82A98C7F0007057F9 /* FavouritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2EF3F62A98C7F0007057F9 /* FavouritesTableViewCell.swift */; };
 		FF2EF3F92A98C7F0007057F9 /* FavouritesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF2EF3F72A98C7F0007057F9 /* FavouritesTableViewCell.xib */; };
+		FF2EF3FB2A99177E007057F9 /* CountriesCurrencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2EF3FA2A99177E007057F9 /* CountriesCurrencies.swift */; };
+		FF2EF3FD2A991937007057F9 /* favouritesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2EF3FC2A991936007057F9 /* favouritesPresenter.swift */; };
+		FF2EF4002A991E62007057F9 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = FF2EF3FF2A991E62007057F9 /* SDWebImage */; };
+		FF2EF4022A991E62007057F9 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FF2EF4012A991E62007057F9 /* SDWebImageMapKit */; };
 		FF58396E2A93842B004AF5AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF58396D2A93842B004AF5AA /* AppDelegate.swift */; };
 		FF5839722A93842C004AF5AA /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5839712A93842C004AF5AA /* ConversionViewController.swift */; };
 		FF5839752A93842C004AF5AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF5839732A93842C004AF5AA /* Main.storyboard */; };
@@ -25,6 +29,8 @@
 		FF2EF3F42A98C740007057F9 /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
 		FF2EF3F62A98C7F0007057F9 /* FavouritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesTableViewCell.swift; sourceTree = "<group>"; };
 		FF2EF3F72A98C7F0007057F9 /* FavouritesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouritesTableViewCell.xib; sourceTree = "<group>"; };
+		FF2EF3FA2A99177E007057F9 /* CountriesCurrencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesCurrencies.swift; sourceTree = "<group>"; };
+		FF2EF3FC2A991936007057F9 /* favouritesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favouritesPresenter.swift; sourceTree = "<group>"; };
 		FF58396A2A93842B004AF5AA /* CurrencyConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrencyConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF58396D2A93842B004AF5AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF5839712A93842C004AF5AA /* ConversionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +48,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF2EF4002A991E62007057F9 /* SDWebImage in Frameworks */,
+				FF2EF4022A991E62007057F9 /* SDWebImageMapKit in Frameworks */,
 				FFE975222A96162A004BC9F6 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -94,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				FF5839812A938EBB004AF5AA /* ConversionPresenter.swift */,
+				FF2EF3FC2A991936007057F9 /* favouritesPresenter.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -112,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				FFE9751B2A96139E004BC9F6 /* Currencies.swift */,
+				FF2EF3FA2A99177E007057F9 /* CountriesCurrencies.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -142,6 +152,8 @@
 			name = CurrencyConverter;
 			packageProductDependencies = (
 				FFE975212A96162A004BC9F6 /* Alamofire */,
+				FF2EF3FF2A991E62007057F9 /* SDWebImage */,
+				FF2EF4012A991E62007057F9 /* SDWebImageMapKit */,
 			);
 			productName = CurrencyConverter;
 			productReference = FF58396A2A93842B004AF5AA /* CurrencyConverter.app */;
@@ -173,6 +185,7 @@
 			mainGroup = FF5839612A93842B004AF5AA;
 			packageReferences = (
 				FFE975202A96162A004BC9F6 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				FF2EF3FE2A991E62007057F9 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = FF58396B2A93842B004AF5AA /* Products */;
 			projectDirPath = "";
@@ -205,9 +218,11 @@
 				FF2EF3F82A98C7F0007057F9 /* FavouritesTableViewCell.swift in Sources */,
 				FF2EF3F52A98C740007057F9 /* FavouritesViewController.swift in Sources */,
 				FF5839722A93842C004AF5AA /* ConversionViewController.swift in Sources */,
+				FF2EF3FB2A99177E007057F9 /* CountriesCurrencies.swift in Sources */,
 				FF58396E2A93842B004AF5AA /* AppDelegate.swift in Sources */,
 				FFE9751F2A96141B004BC9F6 /* APIManager.swift in Sources */,
 				FFE9751C2A96139E004BC9F6 /* Currencies.swift in Sources */,
+				FF2EF3FD2A991937007057F9 /* favouritesPresenter.swift in Sources */,
 				FF5839822A938EBB004AF5AA /* ConversionPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,6 +445,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		FF2EF3FE2A991E62007057F9 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		FFE975202A96162A004BC9F6 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -441,6 +464,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		FF2EF3FF2A991E62007057F9 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF2EF3FE2A991E62007057F9 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		FF2EF4012A991E62007057F9 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF2EF3FE2A991E62007057F9 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
 		FFE975212A96162A004BC9F6 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FFE975202A96162A004BC9F6 /* XCRemoteSwiftPackageReference "Alamofire" */;
