@@ -14,9 +14,27 @@ class ConversionViewController: UIViewController {
     @IBOutlet weak var amountTextField: UITextField!
     @IBOutlet weak var resultLabel: UILabel!
     
-//    var currencies = ["EGP","USD","EUR"]
-//    var rates = ["EGP":["EGP": 1,"USD": 0.033, "EUR": 0.028],
-//                 "USD":["EGP":30,"USD":1,"EUR":0.9],
+    @IBOutlet weak var compareview: UIView!
+    @IBOutlet weak var converter: UIView!
+    @IBOutlet weak var convertbutton: UIButton!
+    @IBOutlet weak var ConvertCompareSwitch: UIView!
+    @IBOutlet weak var AmountFromView: UIView!
+    @IBOutlet weak var FromView: UIView!
+    @IBOutlet weak var ToView: UIView!
+    @IBOutlet weak var AmountToView: UIView!
+    @IBOutlet weak var ConvertCompareSegment: UISegmentedControl!
+    
+    
+    
+    @IBOutlet weak var AmountView2: UIView!
+    @IBOutlet weak var FromAmountview2: UIView!
+    @IBOutlet weak var FromToView2: UIView!
+    @IBOutlet weak var ToAmountView2: UIView!
+    @IBOutlet weak var Convertbutton2: UIButton!
+    
+    //    var currencies = ["EGP","USD","EUR"]
+    //    var rates = ["EGP":["EGP": 1,"USD": 0.033, "EUR": 0.028],
+    //                 "USD":["EGP":30,"USD":1,"EUR":0.9],
 //                 "EUR":["EGP":40,"USD":1.1,"EUR":1]
 //    ]
 //   lazy var selectedFrom: String = currencies[0]
@@ -25,6 +43,40 @@ class ConversionViewController: UIViewController {
     var presenter = ConversionPresenter()
     override func viewDidLoad() {
         super.viewDidLoad()
+        convertbutton.layer.cornerRadius = 20
+        ConvertCompareSwitch.layer.cornerRadius = 20
+        AmountFromView.layer.cornerRadius = 20
+        FromView.layer.cornerRadius = 20
+        ToView.layer.cornerRadius = 20
+        AmountToView.layer.cornerRadius = 20
+        ConvertCompareSegment.layer.cornerRadius = 20
+        
+        
+        AmountFromView.layer.borderColor = UIColor.black.cgColor
+        AmountFromView.layer.borderWidth = 1
+        FromView.layer.borderColor = UIColor.black.cgColor
+        FromView.layer.borderWidth = 1
+        ToView.layer.borderColor = UIColor.black.cgColor
+        ToView.layer.borderWidth = 1
+        AmountToView.layer.borderColor = UIColor.black.cgColor
+        AmountToView.layer.borderWidth = 1
+        
+        
+        AmountView2.layer.cornerRadius = 20
+        FromAmountview2.layer.cornerRadius = 20
+        FromToView2.layer.cornerRadius = 20
+        ToAmountView2.layer.cornerRadius = 20
+        Convertbutton2.layer.cornerRadius = 20
+        
+        AmountView2.layer.borderColor = UIColor.black.cgColor
+        AmountView2.layer.borderWidth = 1
+        FromAmountview2.layer.borderColor = UIColor.black.cgColor
+        FromAmountview2.layer.borderWidth = 1
+        FromToView2.layer.borderColor = UIColor.black.cgColor
+        FromToView2.layer.borderWidth = 1
+        ToAmountView2.layer.borderColor = UIColor.black.cgColor
+        ToAmountView2.layer.borderWidth = 1
+        
 //        fromPicker.delegate = self
 //        fromPicker.dataSource = self
 //        toPicker.dataSource = self
@@ -34,7 +86,20 @@ class ConversionViewController: UIViewController {
         presenter.convertCurrency(from: "USD", to: "EGP")
     }
 
-//    @IBAction func convertCurrencies(_ sender: Any) {
+    
+    @IBAction func sagmentview(_ sender: UISegmentedControl) {
+        
+        if (sender.selectedSegmentIndex == 0){
+            converter.isHidden = false
+            compareview.isHidden = true
+        }else{
+            
+            converter.isHidden = true
+            compareview.isHidden = false
+            
+            
+        }
+    //    @IBAction func convertCurrencies(_ sender: Any) {
 //        guard let amount = amountTextField.text else{ return}
 //
 //        if( amount == ""){
@@ -67,4 +132,4 @@ class ConversionViewController: UIViewController {
 //        }
 //    }
 //}
-
+}
