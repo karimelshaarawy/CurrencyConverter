@@ -9,6 +9,7 @@ import UIKit
 
 class FavouritesViewController: UIViewController {
 
+    @IBOutlet weak var dismissButton: UIButton!
     @IBOutlet weak var wrapperView: UIView!
     @IBOutlet weak var favouritesTableView: UITableView!
     override func viewDidLoad() {
@@ -16,6 +17,7 @@ class FavouritesViewController: UIViewController {
 
         wrapperView.layer.cornerRadius = 20
         wrapperView.layer.masksToBounds = true
+        dismissButton.setTitle("", for: .normal)
         // Do any additional setup after loading the view.
         favouritesTableView.register(UINib(nibName: "FavouritesTableViewCell", bundle: nil), forCellReuseIdentifier: "FavouritesTableViewCell")
         

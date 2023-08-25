@@ -14,6 +14,7 @@ class FavouritesTableViewCell: UITableViewCell {
     @IBOutlet weak var currencyImageView: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
+        checkButton.setTitle("", for: .normal)
         // Initialization code
     }
 
