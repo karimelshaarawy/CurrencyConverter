@@ -90,5 +90,37 @@ class APIManager{
         
     }
     
+    public static func getComparison(from baseID: Int,to targetIDs: [Int],amount: Double, completion: @escaping (_ compareList: [Double]?,_ error: Error? )-> Void){
+           let url = "http://ec2-18-134-206-213.eu-west-2.compute.amazonaws.com/api/v1/currency/compare"
+           let parameters: [String:Any] = [
+               "baseCurrencyId": baseID,
+               "targetCurrencyIds": targetIDs,
+               "amount": amount
+           ]
+           AF.request(url,method: .post,parameters: parameters,encoding: JSONEncoding.default).response { response in
+               guard response.error == nil else{
+                   completion(nil, response.error!)
+                   return
+               }
+               
+               guard let data = response.data else{
+                   print("Couldn't get data from API")
+                   return
+               }
+               
+               do {
+                   let decoder = JSONDecoder()
+                   let currencies = try decoder.decode(Comparison.self, from: data)
+                   completion(currencies.compareResult,nil)
+
+               }catch let error{
+                   print(error)
+                   completion(nil,error)
+               }
+           }
+           
+           
+       }
+    
     
 }

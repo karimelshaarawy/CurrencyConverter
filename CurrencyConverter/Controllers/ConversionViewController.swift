@@ -7,6 +7,8 @@
 
 import UIKit
 import DropDown
+import SDWebImage
+import Kingfisher
 class ConversionViewController: UIViewController {
     
     @IBOutlet weak var segmentControl: UISegmentedControl!
@@ -49,8 +51,9 @@ class ConversionViewController: UIViewController {
     @IBOutlet weak var convertButton: UIButton!
     @IBOutlet weak var compareButton: UIButton!
     
-    private var dataSource = ["EGP", "USD", "JPY"]
-    var presenter = ConversionPresenter()
+    lazy var presenter = ConversionPresenter(view: self)
+    var countries:[CurrencyList] = []
+    private var dataSource:[String] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         convertButton.layer.cornerRadius = 20
@@ -93,7 +96,8 @@ class ConversionViewController: UIViewController {
         compareAmountView.layer.borderWidth = 1
         compareAmountSecondView.layer.borderColor = UIColor.black.cgColor
         compareAmountSecondView.layer.borderWidth = 1
-        presenter.convertCurrency(from: "USD", to: "EGP")
+
+        presenter.getCountries()
     }
     
     
@@ -115,9 +119,10 @@ class ConversionViewController: UIViewController {
         
         dropDown.cellNib = UINib(nibName: "CustomDropDownCell", bundle: nil)
         
-        dropDown.customCellConfiguration = { (index: Index, item: String, cell: DropDownCell) -> Void in
+        dropDown.customCellConfiguration = {[weak self] (index: Index, item: String, cell: DropDownCell) -> Void in
             guard let cell = cell as? CustomDropDownCell else { return }
-            cell.imageView?.image = UIImage(named: "\(index)")
+            cell.imageView!.kf.setImage(with: URL(string:self!.countries[index].flagURL!))
+            cell.imageView?.image?.sd_resizedImage(with: CGSize(width: 28, height: 20), scaleMode: .aspectFit)
             cell.optionLabel.text = item
         }
         dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
@@ -219,4 +224,16 @@ class ConversionViewController: UIViewController {
         guard let amount = Double(amount) else {return}
         
     }
+}
+extension ConversionViewController: ConversionVC{
+    func setDataSource(list: [CurrencyList]) {
+        
+        dataSource = presenter.returnCurrenciesNamesList(currencies: list)
+    }
+    
+    func setCountries(countries: [CurrencyList]) {
+        self.countries = countries
+    }
+    
+    
 }
