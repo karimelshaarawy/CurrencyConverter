@@ -35,4 +35,60 @@ class APIManager{
         
         
     }
+    
+    public static func getCountries(completion: @escaping (_ countriesCurrencies: CountriesCurrencies?,_ error: Error? )-> Void){
+        let url = "http://ec2-18-134-206-213.eu-west-2.compute.amazonaws.com/api/v1/currency"
+        AF.request(url,method: .get,parameters: nil,encoding: URLEncoding.default).response { response in
+            guard response.error == nil else{
+                completion(nil, response.error!)
+                return
+            }
+            
+            guard let data = response.data else{
+                print("Couldn't get data from API")
+                return
+            }
+            
+            do {
+                let decoder = JSONDecoder()
+                let currencies = try decoder.decode(CountriesCurrencies.self, from: data)
+                completion(currencies,nil)
+
+            }catch let error{
+                print(error)
+                completion(nil,error)
+            }
+        }
+        
+        
+    }
+    
+    public static func getConversion(from base: String,to target: String,amount: Double, completion: @escaping (_ conversionRate: Double?,_ error: Error? )-> Void){
+        let url = "http://ec2-18-134-206-213.eu-west-2.compute.amazonaws.com/api/v1/currency/convert/\(base)/\(target)/\(amount)"
+        AF.request(url,method: .get,parameters: nil,encoding: URLEncoding.default).response { response in
+            guard response.error == nil else{
+                completion(nil, response.error!)
+                return
+            }
+            
+            guard let data = response.data else{
+                print("Couldn't get data from API")
+                return
+            }
+            
+            do {
+                let decoder = JSONDecoder()
+                let currencies = try decoder.decode(Conversion.self, from: data)
+                completion(currencies.conversionResult,nil)
+
+            }catch let error{
+                print(error)
+                completion(nil,error)
+            }
+        }
+        
+        
+    }
+    
+    
 }

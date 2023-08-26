@@ -21,4 +21,15 @@ class ConversionPresenter{
             
         }
     }
+    func convert(from:String,to:String,amount: Double){
+        APIManager.getConversion(from: from, to: to, amount: amount) { conversionRate, error in
+            if(error != nil){
+                print(error?.localizedDescription ?? "error")
+                return
+            }
+            if let rate = conversionRate {
+                print(rate)
+            }
+        }
+    }
 }
