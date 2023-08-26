@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E24C06CA2A9A82F7006A6FAA /* CustomDropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24C06C82A9A82F7006A6FAA /* CustomDropDownCell.swift */; };
+		E24C06CB2A9A82F7006A6FAA /* CustomDropDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E24C06C92A9A82F7006A6FAA /* CustomDropDownCell.xib */; };
+		E24C06CD2A9A82F7006A6FAA /* DropDown-master in Resources */ = {isa = PBXBuildFile; fileRef = E24C06CC2A9A82F7006A6FAA /* DropDown-master */; };
+		E24C06D02A9A82F7006A6FAA /* DropDown in Frameworks */ = {isa = PBXBuildFile; productRef = E24C06CF2A9A82F7006A6FAA /* DropDown */; };
 		FF2EF3F52A98C740007057F9 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2EF3F42A98C740007057F9 /* FavouritesViewController.swift */; };
 		FF2EF3F82A98C7F0007057F9 /* FavouritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2EF3F62A98C7F0007057F9 /* FavouritesTableViewCell.swift */; };
 		FF2EF3F92A98C7F0007057F9 /* FavouritesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF2EF3F72A98C7F0007057F9 /* FavouritesTableViewCell.xib */; };
@@ -28,6 +32,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E24C06C82A9A82F7006A6FAA /* CustomDropDownCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomDropDownCell.swift; sourceTree = "<group>"; };
+		E24C06C92A9A82F7006A6FAA /* CustomDropDownCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomDropDownCell.xib; sourceTree = "<group>"; };
+		E24C06CC2A9A82F7006A6FAA /* DropDown-master */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "DropDown-master"; path = "../../DropDown-master"; sourceTree = "<group>"; };
 		FF2EF3F42A98C740007057F9 /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
 		FF2EF3F62A98C7F0007057F9 /* FavouritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesTableViewCell.swift; sourceTree = "<group>"; };
 		FF2EF3F72A98C7F0007057F9 /* FavouritesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouritesTableViewCell.xib; sourceTree = "<group>"; };
@@ -53,6 +60,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF2EF4002A991E62007057F9 /* SDWebImage in Frameworks */,
+				E24C06D02A9A82F7006A6FAA /* DropDown in Frameworks */,
 				FF2EF4022A991E62007057F9 /* SDWebImageMapKit in Frameworks */,
 				FFE975222A96162A004BC9F6 /* Alamofire in Frameworks */,
 			);
@@ -61,12 +69,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E24C06CE2A9A82F7006A6FAA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FF5839612A93842B004AF5AA = {
 			isa = PBXGroup;
 			children = (
 				FFE975232A961AB3004BC9F6 /* Managers */,
 				FF58396C2A93842B004AF5AA /* CurrencyConverter */,
 				FF58396B2A93842B004AF5AA /* Products */,
+				E24C06CE2A9A82F7006A6FAA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,6 +130,8 @@
 		FF5839852A938F01004AF5AA /* views */ = {
 			isa = PBXGroup;
 			children = (
+				E24C06C82A9A82F7006A6FAA /* CustomDropDownCell.swift */,
+				E24C06C92A9A82F7006A6FAA /* CustomDropDownCell.xib */,
 				FF5839732A93842C004AF5AA /* Main.storyboard */,
 				FF2EF3F62A98C7F0007057F9 /* FavouritesTableViewCell.swift */,
 				FF2EF3F72A98C7F0007057F9 /* FavouritesTableViewCell.xib */,
@@ -135,6 +153,7 @@
 		FFE975232A961AB3004BC9F6 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				E24C06CC2A9A82F7006A6FAA /* DropDown-master */,
 				FFE9751E2A96141B004BC9F6 /* APIManager.swift */,
 			);
 			path = Managers;
@@ -160,6 +179,7 @@
 				FFE975212A96162A004BC9F6 /* Alamofire */,
 				FF2EF3FF2A991E62007057F9 /* SDWebImage */,
 				FF2EF4012A991E62007057F9 /* SDWebImageMapKit */,
+				E24C06CF2A9A82F7006A6FAA /* DropDown */,
 			);
 			productName = CurrencyConverter;
 			productReference = FF58396A2A93842B004AF5AA /* CurrencyConverter.app */;
@@ -208,9 +228,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF58397A2A93842E004AF5AA /* LaunchScreen.storyboard in Resources */,
+				E24C06CD2A9A82F7006A6FAA /* DropDown-master in Resources */,
 				FF5839772A93842E004AF5AA /* Assets.xcassets in Resources */,
 				FF5839752A93842C004AF5AA /* Main.storyboard in Resources */,
 				FF2EF3F92A98C7F0007057F9 /* FavouritesTableViewCell.xib in Resources */,
+				E24C06CB2A9A82F7006A6FAA /* CustomDropDownCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +250,7 @@
 				FF2EF3FB2A99177E007057F9 /* CountriesCurrencies.swift in Sources */,
 				FF2EF4042A992F0B007057F9 /* CheckBox.swift in Sources */,
 				FF58396E2A93842B004AF5AA /* AppDelegate.swift in Sources */,
+				E24C06CA2A9A82F7006A6FAA /* CustomDropDownCell.swift in Sources */,
 				FFE9751F2A96141B004BC9F6 /* APIManager.swift in Sources */,
 				FFE9751C2A96139E004BC9F6 /* Currencies.swift in Sources */,
 				FF2EF3FD2A991937007057F9 /* favouritesPresenter.swift in Sources */,
@@ -472,6 +495,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		E24C06CF2A9A82F7006A6FAA /* DropDown */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DropDown;
+		};
 		FF2EF3FF2A991E62007057F9 /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FF2EF3FE2A991E62007057F9 /* XCRemoteSwiftPackageReference "SDWebImage" */;
