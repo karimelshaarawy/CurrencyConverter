@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E24C21F32A9950FA00CF02CF /* DropDown-master in Resources */ = {isa = PBXBuildFile; fileRef = E24C21F22A9950F600CF02CF /* DropDown-master */; };
+		E24C21F62A99525E00CF02CF /* DropDown in Frameworks */ = {isa = PBXBuildFile; productRef = E24C21F52A99525E00CF02CF /* DropDown */; };
 		FF58396E2A93842B004AF5AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF58396D2A93842B004AF5AA /* AppDelegate.swift */; };
 		FF5839722A93842C004AF5AA /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5839712A93842C004AF5AA /* ConversionViewController.swift */; };
 		FF5839752A93842C004AF5AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF5839732A93842C004AF5AA /* Main.storyboard */; };
@@ -19,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E24C21F22A9950F600CF02CF /* DropDown-master */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "DropDown-master"; path = "../../DropDown-master"; sourceTree = "<group>"; };
 		FF58396A2A93842B004AF5AA /* CurrencyConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrencyConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF58396D2A93842B004AF5AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF5839712A93842C004AF5AA /* ConversionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionViewController.swift; sourceTree = "<group>"; };
@@ -37,18 +40,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFE975222A96162A004BC9F6 /* Alamofire in Frameworks */,
+				E24C21F62A99525E00CF02CF /* DropDown in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E24C21F42A99525E00CF02CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FF5839612A93842B004AF5AA = {
 			isa = PBXGroup;
 			children = (
 				FFE975232A961AB3004BC9F6 /* Managers */,
 				FF58396C2A93842B004AF5AA /* CurrencyConverter */,
 				FF58396B2A93842B004AF5AA /* Products */,
+				E24C21F42A99525E00CF02CF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +122,7 @@
 		FFE975232A961AB3004BC9F6 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				E24C21F22A9950F600CF02CF /* DropDown-master */,
 				FFE9751E2A96141B004BC9F6 /* APIManager.swift */,
 			);
 			path = Managers;
@@ -133,6 +146,7 @@
 			name = CurrencyConverter;
 			packageProductDependencies = (
 				FFE975212A96162A004BC9F6 /* Alamofire */,
+				E24C21F52A99525E00CF02CF /* DropDown */,
 			);
 			productName = CurrencyConverter;
 			productReference = FF58396A2A93842B004AF5AA /* CurrencyConverter.app */;
@@ -180,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF58397A2A93842E004AF5AA /* LaunchScreen.storyboard in Resources */,
+				E24C21F32A9950FA00CF02CF /* DropDown-master in Resources */,
 				FF5839772A93842E004AF5AA /* Assets.xcassets in Resources */,
 				FF5839752A93842C004AF5AA /* Main.storyboard in Resources */,
 			);
@@ -429,6 +444,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		E24C21F52A99525E00CF02CF /* DropDown */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DropDown;
+		};
 		FFE975212A96162A004BC9F6 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FFE975202A96162A004BC9F6 /* XCRemoteSwiftPackageReference "Alamofire" */;

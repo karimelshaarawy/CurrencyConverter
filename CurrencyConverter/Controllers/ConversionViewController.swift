@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import DropDown
 class ConversionViewController: UIViewController {
 
     @IBOutlet weak var toPicker: UIPickerView!
@@ -24,6 +24,7 @@ class ConversionViewController: UIViewController {
     @IBOutlet weak var AmountToView: UIView!
     @IBOutlet weak var ConvertCompareSegment: UISegmentedControl!
     
+    @IBOutlet weak var targetcurrency: UILabel!
     
     
     @IBOutlet weak var AmountView2: UIView!
@@ -32,6 +33,14 @@ class ConversionViewController: UIViewController {
     @IBOutlet weak var ToAmountView2: UIView!
     @IBOutlet weak var Convertbutton2: UIButton!
     
+    
+    @IBOutlet weak var currencyfrom: UILabel!
+    @IBOutlet weak var imagecurrencyfrom: UIImageView!
+    @IBOutlet weak var currenctto: UILabel!
+    @IBOutlet weak var imagecurrencyto: UIImageView!
+    
+    
+    
     //    var currencies = ["EGP","USD","EUR"]
     //    var rates = ["EGP":["EGP": 1,"USD": 0.033, "EUR": 0.028],
     //                 "USD":["EGP":30,"USD":1,"EUR":0.9],
@@ -39,7 +48,7 @@ class ConversionViewController: UIViewController {
 //    ]
 //   lazy var selectedFrom: String = currencies[0]
 //    lazy var selectedTo: String = currencies[0]
-    
+  
     var presenter = ConversionPresenter()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -99,6 +108,38 @@ class ConversionViewController: UIViewController {
             
             
         }
+    }
+        @IBAction func showdropmenu(_ sender: Any) {
+        
+        targetcurrency.text = "ahmed"
+    }
+    @IBAction func buttoncurrencyfrom(_ sender: Any) {
+        let dropDown = DropDown()
+        dropDown.anchorView = FromAmountview2
+        dropDown.dataSource = ["USD", "EGP", "JPY"]
+        dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
+          print("Selected item: \(item) at index: \(index)")
+            currenctto.text = item
+        }
+        dropDown.show()
+
+    }
+    
+    @IBAction func buttoncurruncyto(_ sender: Any) {
+        let dropDown = DropDown()
+        dropDown.anchorView = FromAmountview2
+        dropDown.dataSource = ["Car", "Motorcycle", "Truck"]
+        dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
+          print("Selected item: \(item) at index: \(index)")
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
     //    @IBAction func convertCurrencies(_ sender: Any) {
 //        guard let amount = amountTextField.text else{ return}
 //
@@ -112,7 +153,7 @@ class ConversionViewController: UIViewController {
 //
 //
 //    }
-}
+
 
 //extension ConversionViewController: UIPickerViewDelegate,UIPickerViewDataSource{
 //    func numberOfComponents(in pickerView: UIPickerView) -> Int {
