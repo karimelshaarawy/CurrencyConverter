@@ -1,0 +1,989 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "1F600ADC-E3BB-46C4-AD13-FD22C76CE176"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A1237596-73DD-41E9-992B-4ABDC7D58D86"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyConverter/Presenters/favouritesPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "getCountries()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A1237596-73DD-41E9-992B-4ABDC7D58D86 - aaf09c22d91c4648"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;CurrencyConverter.CountriesCurrencies&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CurrencyConverter.favouritesPresenter.getCountries() -&gt; Swift.Optional&lt;Swift.Array&lt;CurrencyConverter.CountryList&gt;&gt;"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elshaarawy/Desktop/ios/CurrencyConverter/CurrencyConverter/Presenters/favouritesPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "216">
+               </Location>
+               <Location
+                  uuid = "A1237596-73DD-41E9-992B-4ABDC7D58D86 - 4f4f56c4f666404e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;CurrencyConverter.CountriesCurrencies&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CurrencyConverter.favouritesPresenter.getCountries() -&gt; ()"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elshaarawy/Desktop/ios/CurrencyConverter/CurrencyConverter/Presenters/favouritesPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "A1237596-73DD-41E9-992B-4ABDC7D58D86 - 4f4f56c4f666404e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;CurrencyConverter.CountriesCurrencies&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CurrencyConverter.favouritesPresenter.getCountries() -&gt; ()"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elshaarawy/Desktop/ios/CurrencyConverter/CurrencyConverter/Presenters/favouritesPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "200">
+               </Location>
+               <Location
+                  uuid = "A1237596-73DD-41E9-992B-4ABDC7D58D86 - 4f4f56c4f666404e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;CurrencyConverter.CountriesCurrencies&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CurrencyConverter.favouritesPresenter.getCountries() -&gt; ()"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elshaarawy/Desktop/ios/CurrencyConverter/CurrencyConverter/Presenters/favouritesPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "224">
+               </Location>
+               <Location
+                  uuid = "A1237596-73DD-41E9-992B-4ABDC7D58D86 - 4f4f56c4f666404e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;CurrencyConverter.CountriesCurrencies&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CurrencyConverter.favouritesPresenter.getCountries() -&gt; ()"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elshaarawy/Desktop/ios/CurrencyConverter/CurrencyConverter/Presenters/favouritesPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "260">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7B416C05-D048-4EDF-8F11-E687A592D797"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyConverter/Presenters/favouritesPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "getCountries()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7B416C05-D048-4EDF-8F11-E687A592D797 - aaf09c22d91c46ab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;CurrencyConverter.CountriesCurrencies&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CurrencyConverter.favouritesPresenter.getCountries() -&gt; Swift.Optional&lt;Swift.Array&lt;CurrencyConverter.CountryList&gt;&gt;"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elshaarawy/Desktop/ios/CurrencyConverter/CurrencyConverter/Presenters/favouritesPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "280">
+               </Location>
+               <Location
+                  uuid = "7B416C05-D048-4EDF-8F11-E687A592D797 - 4f4f56c4f66640ad"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;CurrencyConverter.CountriesCurrencies&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CurrencyConverter.favouritesPresenter.getCountries() -&gt; ()"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elshaarawy/Desktop/ios/CurrencyConverter/CurrencyConverter/Presenters/favouritesPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "216">
+               </Location>
+               <Location
+                  uuid = "7B416C05-D048-4EDF-8F11-E687A592D797 - 4f4f56c4f66640ad"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;CurrencyConverter.CountriesCurrencies&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CurrencyConverter.favouritesPresenter.getCountries() -&gt; ()"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elshaarawy/Desktop/ios/CurrencyConverter/CurrencyConverter/Presenters/favouritesPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "276">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "725C9211-B2CB-4FBC-9729-D5E907CDC2D4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyConverter/Controllers/FavouritesViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "725C9211-B2CB-4FBC-9729-D5E907CDC2D4 - c77ca107b6dad116"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrencyConverter.FavouritesViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elshaarawy/Desktop/ios/CurrencyConverter/CurrencyConverter/Controllers/FavouritesViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "1588">
+               </Location>
+               <Location
+                  uuid = "725C9211-B2CB-4FBC-9729-D5E907CDC2D4 - c77ca107b6dad116"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrencyConverter.FavouritesViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elshaarawy/Desktop/ios/CurrencyConverter/CurrencyConverter/Controllers/FavouritesViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "1676">
+               </Location>
+               <Location
+                  uuid = "725C9211-B2CB-4FBC-9729-D5E907CDC2D4 - c77ca107b6dad116"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrencyConverter.FavouritesViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elshaarawy/Desktop/ios/CurrencyConverter/CurrencyConverter/Controllers/FavouritesViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "1584">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9B8FC200-4A3E-4217-8153-57711012F8B8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyConverter/Presenters/favouritesPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "getCountries()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9B8FC200-4A3E-4217-8153-57711012F8B8 - f44c67712e750d1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrencyConverter.favouritesPresenter.getCountries() -&gt; ()"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elshaarawy/Desktop/ios/CurrencyConverter/CurrencyConverter/Presenters/favouritesPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "448">
+               </Location>
+               <Location
+                  uuid = "9B8FC200-4A3E-4217-8153-57711012F8B8 - f44c67712e750be"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrencyConverter.favouritesPresenter.getCountries() -&gt; ()"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elshaarawy/Desktop/ios/CurrencyConverter/CurrencyConverter/Presenters/favouritesPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "252">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C470EA5B-941D-4D37-9DDC-7652636E3F83"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyConverter/Presenters/favouritesPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "getCountries()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C470EA5B-941D-4D37-9DDC-7652636E3F83 - 4f4f56c4f66640eb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;CurrencyConverter.CountriesCurrencies&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CurrencyConverter.favouritesPresenter.getCountries() -&gt; ()"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elshaarawy/Desktop/ios/CurrencyConverter/CurrencyConverter/Presenters/favouritesPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "288">
+               </Location>
+               <Location
+                  uuid = "C470EA5B-941D-4D37-9DDC-7652636E3F83 - 4f4f56c4f66640eb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;CurrencyConverter.CountriesCurrencies&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CurrencyConverter.favouritesPresenter.getCountries() -&gt; ()"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elshaarawy/Desktop/ios/CurrencyConverter/CurrencyConverter/Presenters/favouritesPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "372">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "86155718-9040-4213-B1C8-9FF16906867D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyConverter/Presenters/favouritesPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "getCountries()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "86155718-9040-4213-B1C8-9FF16906867D - f44c67712e75313"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrencyConverter.favouritesPresenter.getCountries() -&gt; ()"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elshaarawy/Desktop/ios/CurrencyConverter/CurrencyConverter/Presenters/favouritesPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  uuid = "86155718-9040-4213-B1C8-9FF16906867D - 4f4f56c4f66640ca"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;CurrencyConverter.CountriesCurrencies&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CurrencyConverter.favouritesPresenter.getCountries() -&gt; ()"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elshaarawy/Desktop/ios/CurrencyConverter/CurrencyConverter/Presenters/favouritesPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "832">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3631F8D2-46D6-4526-8829-2F42B6B3078D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyConverter/views/FavouritesTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "toggleFavourites(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3631F8D2-46D6-4526-8829-2F42B6B3078D - 6c0040f5e9b5e6e7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrencyConverter.FavouritesTableViewCell.toggleFavourites(CurrencyConverter.CheckBox) -&gt; ()"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elshaarawy/Desktop/ios/CurrencyConverter/CurrencyConverter/views/FavouritesTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "132">
+               </Location>
+               <Location
+                  uuid = "3631F8D2-46D6-4526-8829-2F42B6B3078D - 6c0040f5e9b5e6e7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrencyConverter.FavouritesTableViewCell.toggleFavourites(CurrencyConverter.CheckBox) -&gt; ()"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elshaarawy/Desktop/ios/CurrencyConverter/CurrencyConverter/views/FavouritesTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "572">
+               </Location>
+               <Location
+                  uuid = "3631F8D2-46D6-4526-8829-2F42B6B3078D - 6c0040f5e9b5e6e7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrencyConverter.FavouritesTableViewCell.toggleFavourites(CurrencyConverter.CheckBox) -&gt; ()"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elshaarawy/Desktop/ios/CurrencyConverter/CurrencyConverter/views/FavouritesTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "148">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7D0EA8B7-6E8D-4D4A-9331-31EBA89410D7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyConverter/views/FavouritesTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "toggleFavourites(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7D0EA8B7-6E8D-4D4A-9331-31EBA89410D7 - 6c0040f5e9b5e729"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrencyConverter.FavouritesTableViewCell.toggleFavourites(CurrencyConverter.CheckBox) -&gt; ()"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elshaarawy/Desktop/ios/CurrencyConverter/CurrencyConverter/views/FavouritesTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "644">
+               </Location>
+               <Location
+                  uuid = "7D0EA8B7-6E8D-4D4A-9331-31EBA89410D7 - 6c0040f5e9b5e729"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrencyConverter.FavouritesTableViewCell.toggleFavourites(CurrencyConverter.CheckBox) -&gt; ()"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elshaarawy/Desktop/ios/CurrencyConverter/CurrencyConverter/views/FavouritesTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "656">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "932D8F79-4D98-45E1-A421-BB8C1B7ABC42"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyConverter/views/FavouritesTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "toggleFavourites(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "932D8F79-4D98-45E1-A421-BB8C1B7ABC42 - 6c0040f5e9b5e748"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrencyConverter.FavouritesTableViewCell.toggleFavourites(CurrencyConverter.CheckBox) -&gt; ()"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elshaarawy/Desktop/ios/CurrencyConverter/CurrencyConverter/views/FavouritesTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "804">
+               </Location>
+               <Location
+                  uuid = "932D8F79-4D98-45E1-A421-BB8C1B7ABC42 - 6c0040f5e9b5e748"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrencyConverter.FavouritesTableViewCell.toggleFavourites(CurrencyConverter.CheckBox) -&gt; ()"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elshaarawy/Desktop/ios/CurrencyConverter/CurrencyConverter/views/FavouritesTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "872">
+               </Location>
+               <Location
+                  uuid = "932D8F79-4D98-45E1-A421-BB8C1B7ABC42 - 6c0040f5e9b5e748"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrencyConverter.FavouritesTableViewCell.toggleFavourites(CurrencyConverter.CheckBox) -&gt; ()"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elshaarawy/Desktop/ios/CurrencyConverter/CurrencyConverter/views/FavouritesTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "816">
+               </Location>
+               <Location
+                  uuid = "932D8F79-4D98-45E1-A421-BB8C1B7ABC42 - 6c0040f5e9b5e748"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrencyConverter.FavouritesTableViewCell.toggleFavourites(CurrencyConverter.CheckBox) -&gt; ()"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elshaarawy/Desktop/ios/CurrencyConverter/CurrencyConverter/views/FavouritesTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "884">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C15230A8-632F-49C5-AD25-0FB8E343BDF5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyConverter/views/FavouritesTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "toggleFavourites(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C15230A8-632F-49C5-AD25-0FB8E343BDF5 - 6c0040f5e9b5e76b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrencyConverter.FavouritesTableViewCell.toggleFavourites(CurrencyConverter.CheckBox) -&gt; ()"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elshaarawy/Desktop/ios/CurrencyConverter/CurrencyConverter/views/FavouritesTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "904">
+               </Location>
+               <Location
+                  uuid = "C15230A8-632F-49C5-AD25-0FB8E343BDF5 - 6c0040f5e9b5e76b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrencyConverter.FavouritesTableViewCell.toggleFavourites(CurrencyConverter.CheckBox) -&gt; ()"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elshaarawy/Desktop/ios/CurrencyConverter/CurrencyConverter/views/FavouritesTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "916">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E587CC71-D7DE-4CC5-95A6-40143D64BD24"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyConverter/views/FavouritesTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "toggleFavourites(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E587CC71-D7DE-4CC5-95A6-40143D64BD24 - 6c0040f5e9b5e78a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrencyConverter.FavouritesTableViewCell.toggleFavourites(CurrencyConverter.CheckBox) -&gt; ()"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elshaarawy/Desktop/ios/CurrencyConverter/CurrencyConverter/views/FavouritesTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "1136">
+               </Location>
+               <Location
+                  uuid = "E587CC71-D7DE-4CC5-95A6-40143D64BD24 - 6c0040f5e9b5e78a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrencyConverter.FavouritesTableViewCell.toggleFavourites(CurrencyConverter.CheckBox) -&gt; ()"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elshaarawy/Desktop/ios/CurrencyConverter/CurrencyConverter/views/FavouritesTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "1148">
+               </Location>
+               <Location
+                  uuid = "E587CC71-D7DE-4CC5-95A6-40143D64BD24 - 6c0040f5e9b5e78a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrencyConverter.FavouritesTableViewCell.toggleFavourites(CurrencyConverter.CheckBox) -&gt; ()"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elshaarawy/Desktop/ios/CurrencyConverter/CurrencyConverter/views/FavouritesTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "1140">
+               </Location>
+               <Location
+                  uuid = "E587CC71-D7DE-4CC5-95A6-40143D64BD24 - 65c6fa21c4593db5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (CurrencyConverter.CountryList) -&gt; Swift.Bool in CurrencyConverter.FavouritesTableViewCell.toggleFavourites(CurrencyConverter.CheckBox) -&gt; ()"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elshaarawy/Desktop/ios/CurrencyConverter/CurrencyConverter/views/FavouritesTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "41BA4F47-3F32-4499-9B93-16C34807D22F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyConverter/views/FavouritesTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "toggleFavourites(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "41BA4F47-3F32-4499-9B93-16C34807D22F - 6c0040f5e9b5e7cc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrencyConverter.FavouritesTableViewCell.toggleFavourites(CurrencyConverter.CheckBox) -&gt; ()"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elshaarawy/Desktop/ios/CurrencyConverter/CurrencyConverter/views/FavouritesTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "1196">
+               </Location>
+               <Location
+                  uuid = "41BA4F47-3F32-4499-9B93-16C34807D22F - 6c0040f5e9b5e7ad"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrencyConverter.FavouritesTableViewCell.toggleFavourites(CurrencyConverter.CheckBox) -&gt; ()"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elshaarawy/Desktop/ios/CurrencyConverter/CurrencyConverter/views/FavouritesTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "1288">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F80331B6-5DCA-4F77-9DA7-FEE66F8B5374"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyConverter/views/FavouritesTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "toggleFavourites(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F80331B6-5DCA-4F77-9DA7-FEE66F8B5374 - 6c0040f5e9b5e40e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrencyConverter.FavouritesTableViewCell.toggleFavourites(CurrencyConverter.CheckBox) -&gt; ()"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elshaarawy/Desktop/ios/CurrencyConverter/CurrencyConverter/views/FavouritesTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "1212">
+               </Location>
+               <Location
+                  uuid = "F80331B6-5DCA-4F77-9DA7-FEE66F8B5374 - 65c6fa21c4593e31"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (CurrencyConverter.CountryList) -&gt; Swift.Bool in CurrencyConverter.FavouritesTableViewCell.toggleFavourites(CurrencyConverter.CheckBox) -&gt; ()"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elshaarawy/Desktop/ios/CurrencyConverter/CurrencyConverter/views/FavouritesTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "F80331B6-5DCA-4F77-9DA7-FEE66F8B5374 - 6c0040f5e9b5e7ef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrencyConverter.FavouritesTableViewCell.toggleFavourites(CurrencyConverter.CheckBox) -&gt; ()"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elshaarawy/Desktop/ios/CurrencyConverter/CurrencyConverter/views/FavouritesTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "1308">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "681B31E4-A70A-4948-9548-F32B073E3348"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyConverter/views/FavouritesTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "toggleFavourites(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DDA21C0C-C767-48BD-BB3B-7EE9BE3E76B4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyConverter/views/FavouritesTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "toggleFavourites(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A96B8FFF-A340-43C7-A812-87DF39B2475C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyConverter/views/FavouritesTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "toggleFavourites(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A96B8FFF-A340-43C7-A812-87DF39B2475C - 6c0040f5e9b5e473"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrencyConverter.FavouritesTableViewCell.toggleFavourites(CurrencyConverter.CheckBox) -&gt; ()"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elshaarawy/Desktop/ios/CurrencyConverter/CurrencyConverter/views/FavouritesTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "1400">
+               </Location>
+               <Location
+                  uuid = "A96B8FFF-A340-43C7-A812-87DF39B2475C - 6c0040f5e9b5e473"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrencyConverter.FavouritesTableViewCell.toggleFavourites(CurrencyConverter.CheckBox) -&gt; ()"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elshaarawy/Desktop/ios/CurrencyConverter/CurrencyConverter/views/FavouritesTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "1580">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F278FE83-61FA-4D41-B892-58915ABCA4A1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyConverter/views/FavouritesTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "toggleFavourites(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3183563B-0C60-4631-92A0-B1DD77B9FA14"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyConverter/views/FavouritesTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "toggleFavourites(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "696255E7-C3D3-4B60-ADC9-A045709614DE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyConverter/views/FavouritesTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "toggleFavourites(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "696255E7-C3D3-4B60-ADC9-A045709614DE - 6c0040f5e9b5e5bd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrencyConverter.FavouritesTableViewCell.toggleFavourites(CurrencyConverter.CheckBox) -&gt; ()"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elshaarawy/Desktop/ios/CurrencyConverter/CurrencyConverter/views/FavouritesTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "2132">
+               </Location>
+               <Location
+                  uuid = "696255E7-C3D3-4B60-ADC9-A045709614DE - 6c0040f5e9b5e5bd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrencyConverter.FavouritesTableViewCell.toggleFavourites(CurrencyConverter.CheckBox) -&gt; ()"
+                  moduleName = "CurrencyConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elshaarawy/Desktop/ios/CurrencyConverter/CurrencyConverter/views/FavouritesTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "2312">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F78D1EC9-7C91-4516-8985-73D7A4B66FC4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyConverter/views/FavouritesTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "toggleFavourites(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "50BFB648-43C5-4498-A63B-FABB4FBA12D5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyConverter/views/FavouritesTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "toggleFavourites(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
