@@ -13,7 +13,7 @@ class FavouritesTableViewCell: UITableViewCell {
     @IBOutlet weak var currencyLabel: UILabel!
     @IBOutlet weak var currencyImageView: UIImageView!
     
-    var country : CountryList?
+    var country : CurrencyList?
     override func awakeFromNib() {
         super.awakeFromNib()
         checkButton.setTitle("", for: .normal)
@@ -29,7 +29,7 @@ class FavouritesTableViewCell: UITableViewCell {
     @IBAction func toggleFavourites(_ sender: CheckBox) {
         if let savedData = UserDefaults.standard.object(forKey: "favourites") as? Data {
             let decoder = JSONDecoder()
-            if var loadedItems = try? decoder.decode([CountryList].self, from: savedData) {
+            if var loadedItems = try? decoder.decode([CurrencyList].self, from: savedData) {
                 if let country = country{
                     if(checkButton.isChecked){
                         loadedItems = loadedItems.filter{$0.id != country.id}
@@ -46,7 +46,7 @@ class FavouritesTableViewCell: UITableViewCell {
             }
         }else {
             if let country = country{
-                var loadedItems:[CountryList] = []
+                var loadedItems:[CurrencyList] = []
                 loadedItems.append(country)
                 let encoder = JSONEncoder()
                 if let encoded = try? encoder.encode(loadedItems) {

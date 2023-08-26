@@ -15,7 +15,7 @@ class FavouritesViewController: UIViewController {
     @IBOutlet weak var favouritesTableView: UITableView!
     
     lazy var presenter = favouritesPresenter(view: self)
-    var countries: [CountryList] = []
+    var countries: [CurrencyList] = []
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -51,8 +51,8 @@ extension FavouritesViewController: UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "FavouritesTableViewCell") as? FavouritesTableViewCell{
             cell.selectionStyle = .none
-            cell.currencyLabel.text = countries[indexPath.row].currency
-            cell.currencyImageView.sd_setImage(with: URL(string: countries[indexPath.row].countryFlag!))
+            cell.currencyLabel.text = countries[indexPath.row].currencyCode
+            cell.currencyImageView.sd_setImage(with: URL(string: countries[indexPath.row].flagURL!))
             cell.country = countries[indexPath.row]
             if(containsCountry(country: countries[indexPath.row])){
                 cell.checkButton.isChecked = true
@@ -79,7 +79,7 @@ extension FavouritesViewController: UITableViewDelegate,UITableViewDataSource{
     }
 }
 extension FavouritesViewController: FavouritesVC{
-    func setCountries(countriesList: [CountryList]?) {
+    func setCountries(countriesList: [CurrencyList]?) {
         if let list = countriesList {
             countries = list
         }
@@ -89,10 +89,10 @@ extension FavouritesViewController: FavouritesVC{
         favouritesTableView.reloadData()
     }
     
-    func containsCountry(country:CountryList)-> Bool{
+    func containsCountry(country:CurrencyList)-> Bool{
         if let savedData = UserDefaults.standard.object(forKey: "favourites") as? Data {
             let decoder = JSONDecoder()
-            if var loadedItems = try? decoder.decode([CountryList].self, from: savedData) {
+            if var loadedItems = try? decoder.decode([CurrencyList].self, from: savedData) {
                 for i in loadedItems.indices{
                     if loadedItems[i].id == country.id{
                         return true

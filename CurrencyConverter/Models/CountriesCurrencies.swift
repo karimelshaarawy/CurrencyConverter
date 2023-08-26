@@ -1,22 +1,22 @@
-// This file was generated from JSON Schema using quicktype, do not modify it directly.
-// To parse the JSON, add this file to your project and do:
-//
-//   let countriesCurrencies = try? JSONDecoder().decode(CountriesCurrencies.self, from: jsonData)
-
 import Foundation
 
 // MARK: - CountriesCurrencies
 struct CountriesCurrencies: Codable {
-    let countryList: [CountryList]?
+    let currencyList: [CurrencyList]?
 
     enum CodingKeys: String, CodingKey {
-        case countryList = "country_list"
+        case currencyList = "currency_list"
     }
 }
 
-// MARK: - CountryList
-struct CountryList: Codable {
+// MARK: - CurrencyList
+struct CurrencyList: Codable {
     let id: Int?
-    let countryNameCode, currency: String?
-    let countryFlag: String?
+    let currencyCode: String?
+    let flagURL: String?
+
+    enum CodingKeys: String, CodingKey {
+        case id, currencyCode
+        case flagURL = "flagUrl"
+    }
 }

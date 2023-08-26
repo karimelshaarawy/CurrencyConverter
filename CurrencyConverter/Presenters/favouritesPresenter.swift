@@ -9,7 +9,7 @@ import Foundation
 
 protocol FavouritesVC{
     func reloadTableView()
-    func setCountries(countriesList:[CountryList]?)
+    func setCountries(countriesList:[CurrencyList]?)
 }
 class favouritesPresenter{
     
@@ -19,14 +19,14 @@ class favouritesPresenter{
     }
     
     func getCountries() {
-        var list: [CountryList]? = nil
+        var list: [CurrencyList]? = nil
         APIManager.getCountries {[weak self] countriesCurrencies, error in
             guard error == nil else{
                 print(error?.localizedDescription ?? "ERROR")
                 return
             }
             if let countriesCurrencies = countriesCurrencies {
-                list = countriesCurrencies.countryList
+                list = countriesCurrencies.currencyList
                 }
             self!.view!.setCountries(countriesList: list)
             self!.view!.reloadTableView()

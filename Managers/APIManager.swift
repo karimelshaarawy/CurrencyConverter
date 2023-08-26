@@ -37,7 +37,7 @@ class APIManager{
     }
     
     public static func getCountries(completion: @escaping (_ countriesCurrencies: CountriesCurrencies?,_ error: Error? )-> Void){
-        let url = "http://ec2-18-134-206-213.eu-west-2.compute.amazonaws.com/api/v1/countries"
+        let url = "http://ec2-18-134-206-213.eu-west-2.compute.amazonaws.com/api/v1/currency"
         AF.request(url,method: .get,parameters: nil,encoding: URLEncoding.default).response { response in
             guard response.error == nil else{
                 completion(nil, response.error!)
