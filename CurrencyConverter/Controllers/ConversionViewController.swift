@@ -10,6 +10,7 @@ import DropDown
 class ConversionViewController: UIViewController {
     
     @IBOutlet weak var segmentControl: UISegmentedControl!
+    @IBOutlet weak var segmentView: UIView!
     
     @IBOutlet weak var convertContainerView: UIView!
     @IBOutlet weak var compareContainerView: UIView!
@@ -56,12 +57,16 @@ class ConversionViewController: UIViewController {
         convertButton.layer.cornerRadius = 20
         compareButton.layer.cornerRadius = 20
         segmentControl.layer.cornerRadius = 20
+        segmentControl.clipsToBounds = true
+
+        segmentView.layer.cornerRadius = 10
         convertContainerView.layer.cornerRadius = 20
         compareContainerView.layer.cornerRadius = 20
         convertFromView.layer.cornerRadius = 20
         convertFromCurrencyView.layer.cornerRadius = 20
         convertToCurrencyView.layer.cornerRadius = 20
         convertAmountView.layer.cornerRadius = 20
+        convertFromTextField.layer.cornerRadius = 20
         
         compareFromView.layer.cornerRadius = 20
         compareFromCurrencyView.layer.cornerRadius = 20
@@ -70,7 +75,11 @@ class ConversionViewController: UIViewController {
         compareAmountView.layer.cornerRadius = 20
         compareAmountSecondView.layer.cornerRadius = 20
         
+        convertFromTextField.layer.cornerRadius = 20
+        convertFromTextField.clipsToBounds = true
         
+        compareFromTextField.layer.cornerRadius = 20
+        compareFromTextField.clipsToBounds = true
         
         convertFromView.layer.borderColor = UIColor.black.cgColor
         convertFromView.layer.borderWidth = 1
@@ -94,6 +103,9 @@ class ConversionViewController: UIViewController {
         compareAmountSecondView.layer.borderColor = UIColor.black.cgColor
         compareAmountSecondView.layer.borderWidth = 1
         presenter.convertCurrency(from: "USD", to: "EGP")
+        
+        convertContainerView.isHidden = false
+        compareContainerView.isHidden = true
     }
     
     
@@ -182,7 +194,7 @@ class ConversionViewController: UIViewController {
     
     @IBAction func buttonCompareCurrencyToSecond(_ sender: Any) {
         let dropDown = DropDown()
-        dropDown.anchorView = compareAmountSecondView
+        dropDown.anchorView = compareToCurrencySecondView
         dropDown.dataSource = dataSource
         dropDown.cellNib = UINib(nibName: "CustomDropDownCell", bundle: nil)
         
@@ -193,8 +205,8 @@ class ConversionViewController: UIViewController {
         }
         dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
             print("Selected item: \(item) at index: \(index)")
-            compareResultSecondLabel.text = item
-                    }
+            compareFromCurrencySecondLabel.text = item
+                   }
         dropDown.show()
     }
     
