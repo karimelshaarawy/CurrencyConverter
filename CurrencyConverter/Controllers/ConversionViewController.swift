@@ -10,6 +10,7 @@ import DropDown
 import Kingfisher
 class ConversionViewController: UIViewController {
     
+    @IBOutlet weak var AddToFavouritesButton: UIButton!
     @IBOutlet weak var segmentControl: UISegmentedControl!
     @IBOutlet weak var segmentView: UIView!
     
@@ -110,7 +111,8 @@ class ConversionViewController: UIViewController {
         compareAmountView.layer.borderWidth = 1
         compareAmountSecondView.layer.borderColor = UIColor.black.cgColor
         compareAmountSecondView.layer.borderWidth = 1
-        presenter.convertCurrency(from: "USD", to: "EGP")
+        
+        AddToFavouritesButton.setTitle("", for: .normal)
         
         convertContainerView.isHidden = false
         compareContainerView.isHidden = true
