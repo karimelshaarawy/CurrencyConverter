@@ -50,8 +50,10 @@ class ConversionViewController: UIViewController {
     @IBOutlet weak var convertButton: UIButton!
     @IBOutlet weak var compareButton: UIButton!
     
-    private var dataSource = ["EGP", "USD", "JPY"]
-    var presenter = ConversionPresenter()
+    lazy var presenter = ConversionPresenter(view: self)
+       var countries:[CurrencyList] = []
+       private var dataSource:[String] = []
+
     override func viewDidLoad() {
         super.viewDidLoad()
         convertButton.layer.cornerRadius = 20
@@ -106,6 +108,9 @@ class ConversionViewController: UIViewController {
         
         convertContainerView.isHidden = false
         compareContainerView.isHidden = true
+        
+        presenter.getCountries()
+
     }
     
     
@@ -231,3 +236,17 @@ class ConversionViewController: UIViewController {
         
     }
 }
+
+extension ConversionViewController: ConversionVC{
+    func setDataSource(list: [CurrencyList]) {
+        
+        dataSource = presenter.returnCurrenciesNamesList(currencies: list)
+    }
+    
+    func setCountries(countries: [CurrencyList]) {
+        self.countries = countries
+    }
+    
+    
+}
+
