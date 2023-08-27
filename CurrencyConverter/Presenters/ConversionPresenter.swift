@@ -10,6 +10,7 @@ import Foundation
 protocol ConversionVC{
     func setCountries(countries:[CurrencyList])
     func setDataSource(list:[CurrencyList])
+    func setConvertTextField(rate:Double)
 }
 
 class ConversionPresenter{
@@ -34,13 +35,13 @@ class ConversionPresenter{
         }
     }
     func convert(from:String,to:String,amount: Double){
-        APIManager.getConversion(from: from, to: to, amount: amount) { conversionRate, error in
+        APIManager.getConversion(from: from, to: to, amount: amount) { [weak self]conversionRate, error in
             if(error != nil){
                 print(error?.localizedDescription ?? "error")
                 return
             }
             if let rate = conversionRate {
-                print(rate)
+                self!.view?.setConvertTextField(rate: rate)
             }
         }
     }

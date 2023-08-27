@@ -54,6 +54,11 @@ class ConversionViewController: UIViewController {
     lazy var presenter = ConversionPresenter(view: self)
        var countries:[CurrencyList] = []
        private var dataSource:[String] = []
+    var selectedConvertFrom = "USD"
+    var selectedConvertTo = "USD"
+    var selectedCompareFrom = "USD"
+    var selectedCompareTo1 = "USD"
+    var selectedCompareTo2 = "USD"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -142,6 +147,8 @@ class ConversionViewController: UIViewController {
         dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
             print("Selected item: \(item) at index: \(index)")
             convertFromCurrencyLabel.text = item
+            convertFromImageView.kf.setImage(with: URL(string:self.countries[index].flagURL!))
+            selectedConvertFrom = item
         }
         dropDown.show()
     }
@@ -163,6 +170,8 @@ class ConversionViewController: UIViewController {
         dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
             print("Selected item: \(item) at index: \(index)")
             convertToCurrencyLabel.text = item
+            convertToImageView.kf.setImage(with: URL(string:self.countries[index].flagURL!))
+            selectedConvertTo = item
         }
         dropDown.show()
     }
@@ -238,6 +247,8 @@ class ConversionViewController: UIViewController {
             return
         }
         guard let amount = Double(amount) else {return}
+        presenter.convert(from: selectedConvertFrom, to: selectedConvertTo, amount: amount)
+        
     }
     
     
@@ -253,6 +264,10 @@ class ConversionViewController: UIViewController {
 }
 
 extension ConversionViewController: ConversionVC{
+    func setConvertTextField(rate: Double) {
+        self.convertResultLabel.text = "\(rate)"
+    }
+    
     func setDataSource(list: [CurrencyList]) {
         
         dataSource = presenter.returnCurrenciesNamesList(currencies: list)
