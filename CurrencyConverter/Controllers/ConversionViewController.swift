@@ -133,8 +133,8 @@ class ConversionViewController: UIViewController {
         }
         dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
             print("Selected item: \(item) at index: \(index)")
-            convertFromCurrencyLabel.text = item
-                    }
+            convertFromCurrencyLabel.text = item
+        }
         dropDown.show()
     }
     
@@ -151,8 +151,8 @@ class ConversionViewController: UIViewController {
         }
         dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
             print("Selected item: \(item) at index: \(index)")
-            convertToCurrencyLabel.text = item
-                    }
+            convertToCurrencyLabel.text = item
+        }
         dropDown.show()
     }
     
@@ -169,8 +169,8 @@ class ConversionViewController: UIViewController {
         }
         dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
             print("Selected item: \(item) at index: \(index)")
-            compareFromCurrencyLabel.text = item
-                    }
+            compareFromCurrencyLabel.text = item
+        }
         dropDown.show()
     }
     
@@ -188,7 +188,7 @@ class ConversionViewController: UIViewController {
         dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
             print("Selected item: \(item) at index: \(index)")
             compareToCurrencyLabel.text = item
-                    }
+        }
         dropDown.show()
     }
     
@@ -206,7 +206,7 @@ class ConversionViewController: UIViewController {
         dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
             print("Selected item: \(item) at index: \(index)")
             compareFromCurrencySecondLabel.text = item
-                   }
+        }
         dropDown.show()
     }
     
