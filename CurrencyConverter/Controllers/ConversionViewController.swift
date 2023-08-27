@@ -52,9 +52,12 @@ class ConversionViewController: UIViewController {
     @IBOutlet weak var convertButton: UIButton!
     @IBOutlet weak var compareButton: UIButton!
     
+    @IBOutlet weak var portofolioTableView: UITableView!
     lazy var presenter = ConversionPresenter(view: self)
        var countries:[CurrencyList] = []
        private var dataSource:[String] = []
+    var portofolioCurrencies: [CurrencyList] = []
+    var portofolioValues: [Double] = []
     var selectedConvertFrom = "USD"
     var selectedConvertTo = "USD"
     var selectedCompareFrom = 1
@@ -117,7 +120,13 @@ class ConversionViewController: UIViewController {
         convertContainerView.isHidden = false
         compareContainerView.isHidden = true
         
+        portofolioTableView.delegate = self
+        portofolioTableView.dataSource = self
+        
+        portofolioTableView.register(UINib(nibName: "PortofolioTableViewCell", bundle: nil), forCellReuseIdentifier: "PortofolioTableViewCell")
+        
         presenter.getCountries()
+        presenter.getProtofolio(baseId: 1)
 
     }
     
@@ -184,7 +193,7 @@ class ConversionViewController: UIViewController {
         dropDown.dataSource = dataSource
         dropDown.cellNib = UINib(nibName: "CustomDropDownCell", bundle: nil)
         dropDown.cellHeight = 30
-
+        
         
         dropDown.customCellConfiguration = {[weak self] (index: Index, item: String, cell: DropDownCell) -> Void in
             guard let cell = cell as? CustomDropDownCell else { return }
@@ -277,6 +286,18 @@ class ConversionViewController: UIViewController {
 }
 
 extension ConversionViewController: ConversionVC{
+    func reloadPortofolioTable() {
+        portofolioTableView.reloadData()
+    }
+    
+    func setPortoflioCurrencies(list: [CurrencyList]) {
+        portofolioCurrencies = list
+    }
+    
+    func setPortofolioValues(list: [Double]) {
+        portofolioValues = list
+    }
+    
     func setCompareToFields(results: [Double]) {
         self.compareResultLabel.text = "\(results[0])"
         self.compareResultSecondLabel.text = "\(results[1])"
@@ -293,6 +314,31 @@ extension ConversionViewController: ConversionVC{
     
     func setCountries(countries: [CurrencyList]) {
         self.countries = countries
+    }
+    
+    
+}
+
+extension ConversionViewController: UITableViewDelegate,UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return portofolioCurrencies.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "PortofolioTableViewCell") as? PortofolioTableViewCell{
+            cell.currencyLabel.text = portofolioCurrencies[indexPath.row].currencyCode!
+            cell.flagImageView.kf.setImage(with: URL(string: portofolioCurrencies[indexPath.row].flagURL!))
+           
+            if(portofolioValues.count > indexPath.row){
+                cell.currencyValue.text = "\(portofolioValues[indexPath.row])"
+            }
+            return cell
+        }
+        return UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 95
     }
     
     
