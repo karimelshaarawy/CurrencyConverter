@@ -19,6 +19,7 @@
 		FF2EF4022A991E62007057F9 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FF2EF4012A991E62007057F9 /* SDWebImageMapKit */; };
 		FF2EF4042A992F0B007057F9 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2EF4032A992F0B007057F9 /* CheckBox.swift */; };
 		FF2EF4062A9A6AAF007057F9 /* Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2EF4052A9A6AAF007057F9 /* Conversion.swift */; };
+		FF2EF40F2A9B2BC1007057F9 /* Comparison.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2EF40E2A9B2BC1007057F9 /* Comparison.swift */; };
 		FF58396E2A93842B004AF5AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF58396D2A93842B004AF5AA /* AppDelegate.swift */; };
 		FF5839722A93842C004AF5AA /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5839712A93842C004AF5AA /* ConversionViewController.swift */; };
 		FF5839752A93842C004AF5AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF5839732A93842C004AF5AA /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 		FF2EF3FC2A991936007057F9 /* favouritesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favouritesPresenter.swift; sourceTree = "<group>"; };
 		FF2EF4032A992F0B007057F9 /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		FF2EF4052A9A6AAF007057F9 /* Conversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversion.swift; sourceTree = "<group>"; };
+		FF2EF40E2A9B2BC1007057F9 /* Comparison.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comparison.swift; sourceTree = "<group>"; };
 		FF58396A2A93842B004AF5AA /* CurrencyConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrencyConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF58396D2A93842B004AF5AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF5839712A93842C004AF5AA /* ConversionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				FFE9751B2A96139E004BC9F6 /* Currencies.swift */,
 				FF2EF3FA2A99177E007057F9 /* CountriesCurrencies.swift */,
 				FF2EF4052A9A6AAF007057F9 /* Conversion.swift */,
+				FF2EF40E2A9B2BC1007057F9 /* Comparison.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF2EF3F82A98C7F0007057F9 /* FavouritesTableViewCell.swift in Sources */,
+				FF2EF40F2A9B2BC1007057F9 /* Comparison.swift in Sources */,
 				FF2EF3F52A98C740007057F9 /* FavouritesViewController.swift in Sources */,
 				FF2EF4062A9A6AAF007057F9 /* Conversion.swift in Sources */,
 				FF5839722A93842C004AF5AA /* ConversionViewController.swift in Sources */,
