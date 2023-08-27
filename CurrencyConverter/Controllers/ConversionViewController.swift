@@ -59,10 +59,15 @@ class ConversionViewController: UIViewController {
     var portofolioCurrencies: [CurrencyList] = []
     var portofolioValues: [Double] = []
     var selectedConvertFrom = "USD"
+    var selectedConvertFromId = 1
     var selectedConvertTo = "USD"
     var selectedCompareFrom = 1
     var selectedCompareTo1 = 1
     var selectedCompareTo2 = 1
+    
+    override func viewDidAppear(_ animated: Bool) {
+        presenter.getProtofolio(baseId: selectedConvertFromId)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -160,6 +165,7 @@ class ConversionViewController: UIViewController {
             convertFromCurrencyLabel.text = item
             convertFromImageView.kf.setImage(with: URL(string:self.countries[index].flagURL!))
             selectedConvertFrom = item
+            selectedConvertFromId = index + 1
         }
         dropDown.show()
     }
@@ -257,6 +263,10 @@ class ConversionViewController: UIViewController {
     }
     
     
+    @IBAction func presentFavourites(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "FavouritesViewController")
+        self.present(vc!, animated: true)
+    }
     @IBAction func convertCurrencies(_ sender: Any) {
         guard let amount = convertFromTextField.text else{ return}
         
@@ -265,6 +275,7 @@ class ConversionViewController: UIViewController {
         }
         guard let amount = Double(amount) else {return}
         presenter.convert(from: selectedConvertFrom, to: selectedConvertTo, amount: amount)
+        presenter.getProtofolio(baseId: selectedConvertFromId)
         
     }
     
@@ -281,6 +292,7 @@ class ConversionViewController: UIViewController {
         targetIDs.append(selectedCompareTo1)
         targetIDs.append(selectedCompareTo2)
         presenter.compareTwo(baseID: selectedCompareFrom, targetIDs: targetIDs, amount: amount)
+        presenter.getProtofolio(baseId: selectedCompareFrom)
         
     }
 }

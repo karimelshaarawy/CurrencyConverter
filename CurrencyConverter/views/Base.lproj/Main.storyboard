@@ -710,6 +710,9 @@
                                                                         </constraints>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" image="Image 3"/>
+                                                                        <connections>
+                                                                            <action selector="presentFavourites:" destination="BYZ-38-t0r" eventType="touchUpInside" id="psp-cU-E2N"/>
+                                                                        </connections>
                                                                     </button>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Portofolio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JfN-D6-Bdd">
                                                                         <rect key="frame" x="24" y="83" width="101" height="20.333333333333329"/>
@@ -841,6 +844,9 @@
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system"/>
+                                <connections>
+                                    <action selector="dismissView:" destination="iQX-sb-5OZ" eventType="touchUpInside" id="vbn-4D-goe"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TYP-Aj-bfa">
                                 <rect key="frame" x="20" y="126" width="374" height="590"/>
