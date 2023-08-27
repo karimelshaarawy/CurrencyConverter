@@ -7,6 +7,7 @@
 
 import UIKit
 import DropDown
+import Kingfisher
 class ConversionViewController: UIViewController {
     
     @IBOutlet weak var segmentControl: UISegmentedControl!
@@ -128,12 +129,14 @@ class ConversionViewController: UIViewController {
         let dropDown = DropDown()
         dropDown.anchorView = convertFromCurrencyView
         dropDown.dataSource = dataSource
-        
+        dropDown.cellHeight = 30
         dropDown.cellNib = UINib(nibName: "CustomDropDownCell", bundle: nil)
         
-        dropDown.customCellConfiguration = { (index: Index, item: String, cell: DropDownCell) -> Void in
+        
+        dropDown.customCellConfiguration = {[weak self] (index: Index, item: String, cell: DropDownCell) -> Void in
             guard let cell = cell as? CustomDropDownCell else { return }
-            cell.imageView?.image = UIImage(named: "\(index)")
+            cell.imageView!.kf.setImage(with: URL(string:self!.countries[index].flagURL!))
+            cell.imageView?.image?.sd_resizedImage(with: CGSize(width: 28, height: 20), scaleMode: .aspectFit)
             cell.optionLabel.text = item
         }
         dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
@@ -148,10 +151,13 @@ class ConversionViewController: UIViewController {
         dropDown.anchorView = convertToCurrencyView
         dropDown.dataSource = dataSource
         dropDown.cellNib = UINib(nibName: "CustomDropDownCell", bundle: nil)
+        dropDown.cellHeight = 30
+
         
-        dropDown.customCellConfiguration = { (index: Index, item: String, cell: DropDownCell) -> Void in
+        dropDown.customCellConfiguration = {[weak self] (index: Index, item: String, cell: DropDownCell) -> Void in
             guard let cell = cell as? CustomDropDownCell else { return }
-            cell.imageView?.image = UIImage(named: "\(index)")
+            cell.imageView!.kf.setImage(with: URL(string:self!.countries[index].flagURL!))
+            cell.imageView?.image?.sd_resizedImage(with: CGSize(width: 28, height: 20), scaleMode: .aspectFit)
             cell.optionLabel.text = item
         }
         dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
@@ -166,10 +172,13 @@ class ConversionViewController: UIViewController {
         dropDown.anchorView = compareFromCurrencyView
         dropDown.dataSource = dataSource
         dropDown.cellNib = UINib(nibName: "CustomDropDownCell", bundle: nil)
+        dropDown.cellHeight = 30
+
         
-        dropDown.customCellConfiguration = { (index: Index, item: String, cell: DropDownCell) -> Void in
+        dropDown.customCellConfiguration = {[weak self] (index: Index, item: String, cell: DropDownCell) -> Void in
             guard let cell = cell as? CustomDropDownCell else { return }
-            cell.imageView?.image = UIImage(named: "\(index)")
+            cell.imageView!.kf.setImage(with: URL(string:self!.countries[index].flagURL!))
+            cell.imageView?.image?.sd_resizedImage(with: CGSize(width: 28, height: 20), scaleMode: .aspectFit)
             cell.optionLabel.text = item
         }
         dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
@@ -184,10 +193,13 @@ class ConversionViewController: UIViewController {
         dropDown.anchorView = compareToCurrencyView
         dropDown.dataSource = dataSource
         dropDown.cellNib = UINib(nibName: "CustomDropDownCell", bundle: nil)
+        dropDown.cellHeight = 30
+
         
-        dropDown.customCellConfiguration = { (index: Index, item: String, cell: DropDownCell) -> Void in
+        dropDown.customCellConfiguration = {[weak self] (index: Index, item: String, cell: DropDownCell) -> Void in
             guard let cell = cell as? CustomDropDownCell else { return }
-            cell.imageView?.image = UIImage(named: "\(index)")
+            cell.imageView!.kf.setImage(with: URL(string:self!.countries[index].flagURL!))
+            cell.imageView?.image?.sd_resizedImage(with: CGSize(width: 28, height: 20), scaleMode: .aspectFit)
             cell.optionLabel.text = item
         }
         dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
@@ -202,10 +214,13 @@ class ConversionViewController: UIViewController {
         dropDown.anchorView = compareToCurrencySecondView
         dropDown.dataSource = dataSource
         dropDown.cellNib = UINib(nibName: "CustomDropDownCell", bundle: nil)
+        dropDown.cellHeight = 30
+
         
-        dropDown.customCellConfiguration = { (index: Index, item: String, cell: DropDownCell) -> Void in
+        dropDown.customCellConfiguration = {[weak self] (index: Index, item: String, cell: DropDownCell) -> Void in
             guard let cell = cell as? CustomDropDownCell else { return }
-            cell.imageView?.image = UIImage(named: "\(index)")
+            cell.imageView!.kf.setImage(with: URL(string:self!.countries[index].flagURL!))
+            cell.imageView?.image?.sd_resizedImage(with: CGSize(width: 28, height: 20), scaleMode: .aspectFit)
             cell.optionLabel.text = item
         }
         dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
