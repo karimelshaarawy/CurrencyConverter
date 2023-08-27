@@ -11,6 +11,7 @@ protocol ConversionVC{
     func setCountries(countries:[CurrencyList])
     func setDataSource(list:[CurrencyList])
     func setConvertTextField(rate:Double)
+    func setCompareToFields(results:[Double])
 }
 
 class ConversionPresenter{
@@ -69,4 +70,16 @@ class ConversionPresenter{
         }
         return list
     }
+    func compareTwo(baseID:Int,targetIDs:[Int],amount:Double){
+        APIManager.getComparison(from: baseID, to: targetIDs, amount: amount) {[weak self] compareList, error in
+            guard error == nil else{
+                print(error?.localizedDescription ?? "ERROR")
+                return
+            }
+            if let compare = compareList{
+                self!.view?.setCompareToFields(results: compare)
+            }
+        }
+    }
+    
 }

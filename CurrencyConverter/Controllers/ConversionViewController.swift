@@ -56,9 +56,9 @@ class ConversionViewController: UIViewController {
        private var dataSource:[String] = []
     var selectedConvertFrom = "USD"
     var selectedConvertTo = "USD"
-    var selectedCompareFrom = "USD"
-    var selectedCompareTo1 = "USD"
-    var selectedCompareTo2 = "USD"
+    var selectedCompareFrom = 1
+    var selectedCompareTo1 = 1
+    var selectedCompareTo2 = 1
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -193,6 +193,8 @@ class ConversionViewController: UIViewController {
         dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
             print("Selected item: \(item) at index: \(index)")
             compareFromCurrencyLabel.text = item
+            compareFromImageView.kf.setImage(with: URL(string:self.countries[index].flagURL!))
+            selectedCompareFrom = index + 1
         }
         dropDown.show()
     }
@@ -214,6 +216,8 @@ class ConversionViewController: UIViewController {
         dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
             print("Selected item: \(item) at index: \(index)")
             compareToCurrencyLabel.text = item
+            compareToImageView.kf.setImage(with: URL(string:self.countries[index].flagURL!))
+            selectedCompareTo1 = index + 1
         }
         dropDown.show()
     }
@@ -235,6 +239,8 @@ class ConversionViewController: UIViewController {
         dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
             print("Selected item: \(item) at index: \(index)")
             compareFromCurrencySecondLabel.text = item
+            compareFromImageSecondView.kf.setImage(with: URL(string:self.countries[index].flagURL!))
+            selectedCompareTo2 = index + 1
         }
         dropDown.show()
     }
@@ -260,10 +266,20 @@ class ConversionViewController: UIViewController {
         }
         guard let amount = Double(amount) else {return}
         
+        var targetIDs: [Int] = []
+        targetIDs.append(selectedCompareTo1)
+        targetIDs.append(selectedCompareTo2)
+        presenter.compareTwo(baseID: selectedCompareFrom, targetIDs: targetIDs, amount: amount)
+        
     }
 }
 
 extension ConversionViewController: ConversionVC{
+    func setCompareToFields(results: [Double]) {
+        self.compareResultLabel.text = "\(results[0])"
+        self.compareResultSecondLabel.text = "\(results[1])"
+    }
+    
     func setConvertTextField(rate: Double) {
         self.convertResultLabel.text = "\(rate)"
     }
