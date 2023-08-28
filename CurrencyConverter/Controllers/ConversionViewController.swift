@@ -295,6 +295,16 @@ class ConversionViewController: UIViewController {
         presenter.getProtofolio(baseId: selectedCompareFrom)
         
     }
+    
+    @IBAction func switchCurrency(_ sender: Any) {
+        let from = selectedConvertFrom
+        selectedConvertTo = selectedConvertFrom
+        selectedConvertFrom = from
+        convertToCurrencyLabel.text = selectedConvertTo
+        convertFromCurrencyLabel.text = selectedConvertFrom
+        
+    }
+    
 }
 
 extension ConversionViewController: ConversionVC{
