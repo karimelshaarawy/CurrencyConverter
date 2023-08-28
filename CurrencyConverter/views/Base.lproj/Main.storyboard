@@ -714,7 +714,7 @@
                                                                 <rect key="frame" x="0.0" y="821" width="354" height="500"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="live exchange rates" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fis-ng-lgs">
-                                                                        <rect key="frame" x="24" y="35" width="146" height="20.333333333333329"/>
+                                                                        <rect key="frame" x="8" y="35" width="146" height="20.333333333333329"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -732,7 +732,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Portofolio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JfN-D6-Bdd">
-                                                                        <rect key="frame" x="24" y="83" width="101" height="20.333333333333329"/>
+                                                                        <rect key="frame" x="8" y="83" width="101" height="20.333333333333329"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -744,9 +744,9 @@
                                                                 </subviews>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="500" id="BB5-Y3-8P0"/>
-                                                                    <constraint firstItem="JfN-D6-Bdd" firstAttribute="leading" secondItem="wvJ-k3-hke" secondAttribute="leading" constant="24" id="HOR-av-6lB"/>
+                                                                    <constraint firstItem="JfN-D6-Bdd" firstAttribute="leading" secondItem="wvJ-k3-hke" secondAttribute="leading" constant="8" id="HOR-av-6lB"/>
                                                                     <constraint firstAttribute="bottom" secondItem="VhH-V0-13V" secondAttribute="bottom" constant="16" id="J8k-La-V4R"/>
-                                                                    <constraint firstItem="fis-ng-lgs" firstAttribute="leading" secondItem="wvJ-k3-hke" secondAttribute="leading" constant="24" id="T0p-AA-QxW"/>
+                                                                    <constraint firstItem="fis-ng-lgs" firstAttribute="leading" secondItem="wvJ-k3-hke" secondAttribute="leading" constant="8" id="T0p-AA-QxW"/>
                                                                     <constraint firstItem="JfN-D6-Bdd" firstAttribute="top" secondItem="fis-ng-lgs" secondAttribute="bottom" constant="27.666666666666671" id="T95-hb-QjW"/>
                                                                     <constraint firstItem="VhH-V0-13V" firstAttribute="leading" secondItem="wvJ-k3-hke" secondAttribute="leading" id="W9O-sb-O1W"/>
                                                                     <constraint firstAttribute="trailing" secondItem="VhH-V0-13V" secondAttribute="trailing" id="ZcU-Ru-XK8"/>
