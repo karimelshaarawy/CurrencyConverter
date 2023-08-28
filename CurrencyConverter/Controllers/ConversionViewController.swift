@@ -58,7 +58,7 @@ class ConversionViewController: UIViewController {
        private var dataSource:[String] = []
     var portofolioCurrencies: [CurrencyList] = []
     var portofolioValues: [Double] = []
-    var selectedConvertFrom = "USD"
+    var selectedConvertFrom = "EGP"
     var selectedConvertFromId = 1
     var selectedConvertTo = "USD"
     var selectedCompareFrom = 1

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75994BA22A9CCB6000B1643C /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = 75994BA12A9CCB6000B1643C /* NVActivityIndicatorView */; };
+		75994BA42A9CCB6000B1643C /* NVActivityIndicatorViewExtended in Frameworks */ = {isa = PBXBuildFile; productRef = 75994BA32A9CCB6000B1643C /* NVActivityIndicatorViewExtended */; };
 		75C414BF2A9A97AB004F259E /* DropDown in Frameworks */ = {isa = PBXBuildFile; productRef = 75C414BE2A9A97AB004F259E /* DropDown */; };
 		E24C06CA2A9A82F7006A6FAA /* CustomDropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24C06C82A9A82F7006A6FAA /* CustomDropDownCell.swift */; };
 		E24C06CB2A9A82F7006A6FAA /* CustomDropDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E24C06C92A9A82F7006A6FAA /* CustomDropDownCell.xib */; };
@@ -65,8 +67,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75994BA42A9CCB6000B1643C /* NVActivityIndicatorViewExtended in Frameworks */,
 				FF2EF4002A991E62007057F9 /* SDWebImage in Frameworks */,
 				75C414BF2A9A97AB004F259E /* DropDown in Frameworks */,
+				75994BA22A9CCB6000B1643C /* NVActivityIndicatorView in Frameworks */,
 				FF2EF4022A991E62007057F9 /* SDWebImageMapKit in Frameworks */,
 				FFE975222A96162A004BC9F6 /* Alamofire in Frameworks */,
 				FF2EF4122A9B2DCF007057F9 /* Kingfisher in Frameworks */,
@@ -191,6 +195,8 @@
 				FF2EF4012A991E62007057F9 /* SDWebImageMapKit */,
 				75C414BE2A9A97AB004F259E /* DropDown */,
 				FF2EF4112A9B2DCF007057F9 /* Kingfisher */,
+				75994BA12A9CCB6000B1643C /* NVActivityIndicatorView */,
+				75994BA32A9CCB6000B1643C /* NVActivityIndicatorViewExtended */,
 			);
 			productName = CurrencyConverter;
 			productReference = FF58396A2A93842B004AF5AA /* CurrencyConverter.app */;
@@ -224,6 +230,7 @@
 				FFE975202A96162A004BC9F6 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				FF2EF3FE2A991E62007057F9 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 				FF2EF4102A9B2DCF007057F9 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				75994BA02A9CCB6000B1643C /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
 			);
 			productRefGroup = FF58396B2A93842B004AF5AA /* Products */;
 			projectDirPath = "";
@@ -490,6 +497,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		75994BA02A9CCB6000B1643C /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ninjaprox/NVActivityIndicatorView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		FF2EF3FE2A991E62007057F9 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
@@ -517,6 +532,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		75994BA12A9CCB6000B1643C /* NVActivityIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75994BA02A9CCB6000B1643C /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorView;
+		};
+		75994BA32A9CCB6000B1643C /* NVActivityIndicatorViewExtended */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75994BA02A9CCB6000B1643C /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorViewExtended;
+		};
 		75C414BE2A9A97AB004F259E /* DropDown */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = DropDown;

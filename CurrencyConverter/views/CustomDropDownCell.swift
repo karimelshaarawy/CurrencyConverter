@@ -13,6 +13,7 @@ class CustomDropDownCell: DropDownCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        flagimageView.layer.cornerRadius = 20
+        
     }
 }

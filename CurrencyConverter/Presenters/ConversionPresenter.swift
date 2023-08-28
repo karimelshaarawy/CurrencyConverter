@@ -39,7 +39,7 @@ class ConversionPresenter{
         }
     }
     func convert(from:String,to:String,amount: Double){
-        APIManager.getConversion(from: from, to: to, amount: amount) { [weak self]conversionRate, error in
+        APIManager.getConversion(from: from, to: to, amount: amount) { [weak self] conversionRate, error in
             if(error != nil){
                 print(error?.localizedDescription ?? "error")
                 return
