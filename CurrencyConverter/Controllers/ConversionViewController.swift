@@ -367,7 +367,7 @@ extension ConversionViewController: UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "PortofolioTableViewCell") as? PortofolioTableViewCell{
             cell.currencyLabel.text = portofolioCurrencies[indexPath.row].currencyCode!
-            cell.flagImageView.kf.setImage(with: URL(string: portofolioCurrencies[indexPath.row].flagURL!))
+            cell.flagImageView.maskCircle(url: portofolioCurrencies[indexPath.row].flagURL!)
            
             if(portofolioValues.count > indexPath.row){
                 cell.currencyValue.text = "\(portofolioValues[indexPath.row])"
