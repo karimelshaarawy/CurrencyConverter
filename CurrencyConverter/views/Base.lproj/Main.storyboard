@@ -720,7 +720,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HdG-47-o7S">
-                                                                        <rect key="frame" x="203" y="28" width="135" height="36"/>
+                                                                        <rect key="frame" x="199" y="28" width="135" height="36"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="135" id="8gS-Vr-fqg"/>
                                                                             <constraint firstAttribute="height" constant="36" id="HZ5-nV-CJ9"/>
@@ -753,7 +753,7 @@
                                                                     <constraint firstItem="HdG-47-o7S" firstAttribute="top" secondItem="wvJ-k3-hke" secondAttribute="top" constant="28" id="lXW-Vc-LHJ"/>
                                                                     <constraint firstItem="fis-ng-lgs" firstAttribute="top" secondItem="wvJ-k3-hke" secondAttribute="top" constant="35" id="pIr-WA-9Uz"/>
                                                                     <constraint firstItem="VhH-V0-13V" firstAttribute="top" secondItem="JfN-D6-Bdd" secondAttribute="bottom" constant="16" id="qGd-8V-b87"/>
-                                                                    <constraint firstAttribute="trailing" secondItem="HdG-47-o7S" secondAttribute="trailing" constant="16" id="tOc-UY-0yY"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="HdG-47-o7S" secondAttribute="trailing" constant="20" id="tOc-UY-0yY"/>
                                                                 </constraints>
                                                             </view>
                                                         </subviews>
