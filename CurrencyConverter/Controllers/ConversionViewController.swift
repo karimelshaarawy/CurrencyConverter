@@ -53,6 +53,9 @@ class ConversionViewController: UIViewController {
     @IBOutlet weak var compareButton: UIButton!
     
     @IBOutlet weak var portofolioTableView: UITableView!
+    
+    
+    @IBOutlet weak var favoriteview: UIView!
     lazy var presenter = ConversionPresenter(view: self)
        var countries:[CurrencyList] = []
        private var dataSource:[String] = []
@@ -145,9 +148,11 @@ class ConversionViewController: UIViewController {
     @IBAction func sagmentview(_ sender: UISegmentedControl) {
         if (sender.selectedSegmentIndex == 0){
             convertContainerView.isHidden = false
+            favoriteview.isHidden = false
             compareContainerView.isHidden = true
         } else {
             compareContainerView.isHidden = false
+            favoriteview.isHidden = true
             convertContainerView.isHidden = true
         }
     }
