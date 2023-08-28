@@ -73,10 +73,10 @@ class APIManager{
         
     }
     
-    public static func getConversion(from base: String,to target: String,amount: Double, completion: @escaping (_ conversionRate: Double?,_ error: Error? )-> Void){
+    public static func getConversion(from base: Int,to target: Int,amount: Double, completion: @escaping (_ conversionRate: Double?,_ error: Error? )-> Void){
         NVActivityIndicatorPresenter.sharedInstance.startAnimating(activityData)
 
-        let url = "http://ec2-18-134-206-213.eu-west-2.compute.amazonaws.com/api/v1/currency/convert/\(base)/\(target)/\(Int(amount))"
+        let url = "http://ec2-18-134-206-213.eu-west-2.compute.amazonaws.com/api/v1/currency/convert/\(base)/\(target)/\(Double(amount))"
         AF.request(url,method: .get,parameters: nil,encoding: URLEncoding.default).response { response in
             guard response.error == nil else{
                 completion(nil, response.error!)

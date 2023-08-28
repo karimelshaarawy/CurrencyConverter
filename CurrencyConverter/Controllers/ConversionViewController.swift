@@ -61,6 +61,7 @@ class ConversionViewController: UIViewController {
     var selectedConvertFrom = "EGP"
     var selectedConvertFromId = 1
     var selectedConvertTo = "USD"
+    var selectedConvertToId = 1
     var selectedCompareFrom = 1
     var selectedCompareTo1 = 1
     var selectedCompareTo2 = 1
@@ -132,6 +133,11 @@ class ConversionViewController: UIViewController {
         
         presenter.getCountries()
         presenter.getProtofolio(baseId: 1)
+        convertFromCurrencyLabel.text = "USD"
+        convertFromImageView.image = UIImage(named: "1")
+        compareFromCurrencyLabel.text = "USD"
+        compareFromImageView.image = UIImage(named: "1")
+
 
     }
     
@@ -189,6 +195,7 @@ class ConversionViewController: UIViewController {
             convertToCurrencyLabel.text = item
             convertToImageView.kf.setImage(with: URL(string:self.countries[index].flagURL!))
             selectedConvertTo = item
+            selectedConvertToId = index + 1
         }
         dropDown.show()
     }
@@ -274,7 +281,7 @@ class ConversionViewController: UIViewController {
             return
         }
         guard let amount = Double(amount) else {return}
-        presenter.convert(from: selectedConvertFrom, to: selectedConvertTo, amount: amount)
+        presenter.convert(from: selectedConvertFromId, to: selectedConvertToId, amount: amount)
         presenter.getProtofolio(baseId: selectedConvertFromId)
         
     }
@@ -297,11 +304,17 @@ class ConversionViewController: UIViewController {
     }
     
     @IBAction func switchCurrency(_ sender: Any) {
-        let from = selectedConvertFrom
-        selectedConvertTo = selectedConvertFrom
-        selectedConvertFrom = from
-        convertToCurrencyLabel.text = selectedConvertTo
-        convertFromCurrencyLabel.text = selectedConvertFrom
+        let from = convertToCurrencyLabel.text ?? ""
+//        selectedConvertTo = selectedConvertFrom
+//        selectedConvertFrom = from
+        convertToCurrencyLabel.text = convertFromCurrencyLabel.text ?? ""
+        convertFromCurrencyLabel.text = from
+        var temp = selectedConvertFromId
+        selectedConvertFromId = selectedConvertToId
+        selectedConvertToId = temp
+        var image = convertFromImageView.image
+        convertFromImageView.image = convertToImageView.image
+        convertToImageView.image = image
         
     }
     
