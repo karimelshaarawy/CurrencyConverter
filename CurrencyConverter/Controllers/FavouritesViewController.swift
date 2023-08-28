@@ -55,7 +55,7 @@ extension FavouritesViewController: UITableViewDelegate,UITableViewDataSource{
         if let cell = tableView.dequeueReusableCell(withIdentifier: "FavouritesTableViewCell") as? FavouritesTableViewCell{
             cell.selectionStyle = .none
             cell.currencyLabel.text = countries[indexPath.row].currencyCode
-            cell.currencyImageView.sd_setImage(with: URL(string: countries[indexPath.row].flagURL!))
+            cell.currencyImageView.maskCircle(url: countries[indexPath.row].flagURL!)
             cell.country = countries[indexPath.row]
             if(containsCountry(country: countries[indexPath.row])){
                 cell.checkButton.isChecked = true
