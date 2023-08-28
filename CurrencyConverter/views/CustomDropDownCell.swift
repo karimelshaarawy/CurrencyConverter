@@ -13,7 +13,10 @@ class CustomDropDownCell: DropDownCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        flagimageView.layer.cornerRadius = 20
+        flagimageView.clipsToBounds = true
+        flagimageView.layer.cornerRadius = 17.5
+        flagimageView.layer.borderColor = UIColor.black.cgColor
+        flagimageView.layer.borderWidth = 0.1
         
     }
 }
