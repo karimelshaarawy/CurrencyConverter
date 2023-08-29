@@ -88,6 +88,7 @@ class ConversionViewController: UIViewController {
         convertToCurrencyView.layer.cornerRadius = 20
         convertAmountView.layer.cornerRadius = 20
         convertFromTextField.layer.cornerRadius = 20
+        convertFromTextField.keyboardType = .decimalPad
         
         compareFromView.layer.cornerRadius = 20
         compareFromCurrencyView.layer.cornerRadius = 20
@@ -95,6 +96,7 @@ class ConversionViewController: UIViewController {
         compareToCurrencySecondView.layer.cornerRadius = 20
         compareAmountView.layer.cornerRadius = 20
         compareAmountSecondView.layer.cornerRadius = 20
+        compareFromTextField.keyboardType = .decimalPad
         
         convertFromTextField.layer.cornerRadius = 20
         convertFromTextField.clipsToBounds = true
