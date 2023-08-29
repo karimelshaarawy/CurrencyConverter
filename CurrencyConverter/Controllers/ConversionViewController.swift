@@ -53,6 +53,9 @@ class ConversionViewController: UIViewController {
     @IBOutlet weak var compareButton: UIButton!
     
     @IBOutlet weak var portofolioTableView: UITableView!
+    
+    
+    @IBOutlet weak var favoriteview: UIView!
     lazy var presenter = ConversionPresenter(view: self)
        var countries:[CurrencyList] = []
        private var dataSource:[String] = []
@@ -131,6 +134,8 @@ class ConversionViewController: UIViewController {
         
         portofolioTableView.register(UINib(nibName: "PortofolioTableViewCell", bundle: nil), forCellReuseIdentifier: "PortofolioTableViewCell")
         
+        NotificationCenter.default.addObserver(self, selector: #selector(reloadPortfolio), name: NSNotification.Name( "reload"), object: nil)
+        
         presenter.getCountries()
         presenter.getProtofolio(baseId: 1)
         convertFromCurrencyLabel.text = "USD"
@@ -141,13 +146,19 @@ class ConversionViewController: UIViewController {
 
     }
     
+    @objc func reloadPortfolio (notifcation:NSNotification){
+        presenter.getProtofolio(baseId: selectedConvertFromId)
+    }
+    
     
     @IBAction func sagmentview(_ sender: UISegmentedControl) {
         if (sender.selectedSegmentIndex == 0){
             convertContainerView.isHidden = false
+            favoriteview.isHidden = false
             compareContainerView.isHidden = true
         } else {
             compareContainerView.isHidden = false
+            favoriteview.isHidden = true
             convertContainerView.isHidden = true
         }
     }
@@ -156,14 +167,14 @@ class ConversionViewController: UIViewController {
         let dropDown = DropDown()
         dropDown.anchorView = convertFromCurrencyView
         dropDown.dataSource = dataSource
-        dropDown.cellHeight = 30
+//        dropDown.cellHeight = 30
         dropDown.cellNib = UINib(nibName: "CustomDropDownCell", bundle: nil)
         
         
         dropDown.customCellConfiguration = {[weak self] (index: Index, item: String, cell: DropDownCell) -> Void in
             guard let cell = cell as? CustomDropDownCell else { return }
-            cell.imageView!.kf.setImage(with: URL(string:self!.countries[index].flagURL!))
-            cell.imageView?.image?.sd_resizedImage(with: CGSize(width: 28, height: 20), scaleMode: .aspectFit)
+            cell.flagimageView!.kf.setImage(with: URL(string:self!.countries[index].flagURL!))
+//            cell.flagimageView?.image?.sd_resizedImage(with: CGSize(width: 28, height: 20), scaleMode: .aspectFit)
             cell.optionLabel.text = item
         }
         dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
@@ -181,13 +192,13 @@ class ConversionViewController: UIViewController {
         dropDown.anchorView = convertToCurrencyView
         dropDown.dataSource = dataSource
         dropDown.cellNib = UINib(nibName: "CustomDropDownCell", bundle: nil)
-        dropDown.cellHeight = 30
+//        dropDown.cellHeight = 60
 
         
         dropDown.customCellConfiguration = {[weak self] (index: Index, item: String, cell: DropDownCell) -> Void in
             guard let cell = cell as? CustomDropDownCell else { return }
-            cell.imageView!.kf.setImage(with: URL(string:self!.countries[index].flagURL!))
-            cell.imageView?.image?.sd_resizedImage(with: CGSize(width: 28, height: 20), scaleMode: .aspectFit)
+            cell.flagimageView!.kf.setImage(with: URL(string:self!.countries[index].flagURL!))
+//            cell.flagimageView?.image?.sd_resizedImage(with: CGSize(width: 28, height: 20), scaleMode: .aspectFit)
             cell.optionLabel.text = item
         }
         dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
@@ -205,13 +216,13 @@ class ConversionViewController: UIViewController {
         dropDown.anchorView = compareFromCurrencyView
         dropDown.dataSource = dataSource
         dropDown.cellNib = UINib(nibName: "CustomDropDownCell", bundle: nil)
-        dropDown.cellHeight = 30
+//        dropDown.cellHeight = 30
         
         
         dropDown.customCellConfiguration = {[weak self] (index: Index, item: String, cell: DropDownCell) -> Void in
             guard let cell = cell as? CustomDropDownCell else { return }
-            cell.imageView!.kf.setImage(with: URL(string:self!.countries[index].flagURL!))
-            cell.imageView?.image?.sd_resizedImage(with: CGSize(width: 28, height: 20), scaleMode: .aspectFit)
+            cell.flagimageView.kf.setImage(with: URL(string:self!.countries[index].flagURL!))
+//            cell.imageView?.image?.sd_resizedImage(with: CGSize(width: 28, height: 20), scaleMode: .aspectFit)
             cell.optionLabel.text = item
         }
         dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
@@ -228,13 +239,13 @@ class ConversionViewController: UIViewController {
         dropDown.anchorView = compareToCurrencyView
         dropDown.dataSource = dataSource
         dropDown.cellNib = UINib(nibName: "CustomDropDownCell", bundle: nil)
-        dropDown.cellHeight = 30
+//        dropDown.cellHeight = 30
 
         
         dropDown.customCellConfiguration = {[weak self] (index: Index, item: String, cell: DropDownCell) -> Void in
             guard let cell = cell as? CustomDropDownCell else { return }
-            cell.imageView!.kf.setImage(with: URL(string:self!.countries[index].flagURL!))
-            cell.imageView?.image?.sd_resizedImage(with: CGSize(width: 28, height: 20), scaleMode: .aspectFit)
+            cell.flagimageView.kf.setImage(with: URL(string:self!.countries[index].flagURL!))
+//            cell.flagimageView?.image?.sd_resizedImage(with: CGSize(width: 28, height: 20), scaleMode: .aspectFit)
             cell.optionLabel.text = item
         }
         dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
@@ -251,13 +262,13 @@ class ConversionViewController: UIViewController {
         dropDown.anchorView = compareToCurrencySecondView
         dropDown.dataSource = dataSource
         dropDown.cellNib = UINib(nibName: "CustomDropDownCell", bundle: nil)
-        dropDown.cellHeight = 30
+//        dropDown.cellHeight = 30
 
         
         dropDown.customCellConfiguration = {[weak self] (index: Index, item: String, cell: DropDownCell) -> Void in
             guard let cell = cell as? CustomDropDownCell else { return }
-            cell.imageView!.kf.setImage(with: URL(string:self!.countries[index].flagURL!))
-            cell.imageView?.image?.sd_resizedImage(with: CGSize(width: 28, height: 20), scaleMode: .aspectFit)
+            cell.flagimageView.kf.setImage(with: URL(string:self!.countries[index].flagURL!))
+//            cell.flagimageView?.image?.sd_resizedImage(with: CGSize(width: 28, height: 20), scaleMode: .aspectFit)
             cell.optionLabel.text = item
         }
         dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
@@ -299,9 +310,12 @@ class ConversionViewController: UIViewController {
         targetIDs.append(selectedCompareTo1)
         targetIDs.append(selectedCompareTo2)
         presenter.compareTwo(baseID: selectedCompareFrom, targetIDs: targetIDs, amount: amount)
-        presenter.getProtofolio(baseId: selectedCompareFrom)
+//        presenter.getProtofolio(baseId: selectedCompareFrom)
+        
         
     }
+    
+    
     
     @IBAction func switchCurrency(_ sender: Any) {
         let from = convertToCurrencyLabel.text ?? ""
@@ -362,7 +376,7 @@ extension ConversionViewController: UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "PortofolioTableViewCell") as? PortofolioTableViewCell{
             cell.currencyLabel.text = portofolioCurrencies[indexPath.row].currencyCode!
-            cell.flagImageView.kf.setImage(with: URL(string: portofolioCurrencies[indexPath.row].flagURL!))
+            cell.flagImageView.maskCircle(url: portofolioCurrencies[indexPath.row].flagURL!)
            
             if(portofolioValues.count > indexPath.row){
                 cell.currencyValue.text = "\(portofolioValues[indexPath.row])"

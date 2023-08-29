@@ -58,3 +58,16 @@ class FavouritesTableViewCell: UITableViewCell {
         }
     }
 }
+extension UIImageView {
+  public func maskCircle(url: String) {
+      self.contentMode = UIView.ContentMode.scaleAspectFill
+    self.layer.cornerRadius = self.frame.height / 2
+    self.layer.masksToBounds = false
+    self.clipsToBounds = true
+
+   // make square(* must to make circle),
+   // resize(reduce the kilobyte) and
+   // fix rotation.
+      self.kf.setImage(with: URL(string: url))
+  }
+}
