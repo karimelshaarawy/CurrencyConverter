@@ -41,6 +41,12 @@ class FavouritesViewController: UIViewController {
     }
     */
     @IBAction func dismissView(_ sender: Any) {
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "reload"), object: nil)
+        dismiss(animated: true)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "reload"), object: nil)
         dismiss(animated: true)
     }
     

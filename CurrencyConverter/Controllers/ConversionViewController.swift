@@ -134,6 +134,8 @@ class ConversionViewController: UIViewController {
         
         portofolioTableView.register(UINib(nibName: "PortofolioTableViewCell", bundle: nil), forCellReuseIdentifier: "PortofolioTableViewCell")
         
+        NotificationCenter.default.addObserver(self, selector: #selector(reloadPortfolio), name: NSNotification.Name( "reload"), object: nil)
+        
         presenter.getCountries()
         presenter.getProtofolio(baseId: 1)
         convertFromCurrencyLabel.text = "USD"
@@ -142,6 +144,10 @@ class ConversionViewController: UIViewController {
         compareFromImageView.image = UIImage(named: "1")
 
 
+    }
+    
+    @objc func reloadPortfolio (notifcation:NSNotification){
+        presenter.getProtofolio(baseId: selectedConvertFromId)
     }
     
     
@@ -304,9 +310,12 @@ class ConversionViewController: UIViewController {
         targetIDs.append(selectedCompareTo1)
         targetIDs.append(selectedCompareTo2)
         presenter.compareTwo(baseID: selectedCompareFrom, targetIDs: targetIDs, amount: amount)
-        presenter.getProtofolio(baseId: selectedCompareFrom)
+//        presenter.getProtofolio(baseId: selectedCompareFrom)
+        
         
     }
+    
+    
     
     @IBAction func switchCurrency(_ sender: Any) {
         let from = convertToCurrencyLabel.text ?? ""
